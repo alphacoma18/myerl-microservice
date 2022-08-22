@@ -1,0 +1,18 @@
+.headerWhyChoose {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.flexWhyChoose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .4rem;
+    width: 100%;
+}
+.itemWhyChoose {
+    /* background: lightblue; */
+    width: 40%;
+    padding: 1rem;
+}
