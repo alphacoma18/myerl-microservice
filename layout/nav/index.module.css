@@ -1,0 +1,23 @@
+.outermostNav {
+	padding: 0.4rem;
+	background: white;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: space-between;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+.navButton {
+	border: none;
+	padding: 1rem;
+	background: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+	.outermostNav {
+		background: black;
+		box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.4);
+	}
+}
