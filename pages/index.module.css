@@ -1,13 +1,12 @@
 .outermostSection {
-
 }
 .widthReducer {
-    width: 94vw;
-    margin: auto;
+	width: 94vw;
+	margin: auto;
 }
 .mainHeader {
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 2rem;
+	padding: 1rem;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 2rem;
 }

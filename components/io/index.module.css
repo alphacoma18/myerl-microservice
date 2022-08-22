@@ -1,0 +1,13 @@
+.inputDiv, .outputDiv {
+	width: 100%;
+	display: flex;
+}
+.generateURLInput,
+.generateURLOutput {
+	width: 50%;
+	padding-left: 58px;
+	padding-right: 58px;
+	height: 70px;
+	font-size: inherit;
+	margin: auto;
+}

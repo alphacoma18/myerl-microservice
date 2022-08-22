@@ -10,6 +10,7 @@ const Nav: React.FC = () => {
 				<button className={styles.navButton}>FAQs</button>
 				<button className={styles.navButton}>T&Cs</button>
 				<button className={styles.navButton}>API</button>
+				<button className={styles.navButton}>Contact Us</button>
 			</div>
 		</nav>
 	);
