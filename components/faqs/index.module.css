@@ -1,0 +1,22 @@
+.headerFaqs {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.flexFaqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .4rem;
+    width: 100%;
+}
+.itemFaqs {
+    /* background: lightblue; */
+    width: 80%;
+    padding: .4rem;
+}
+.summary {
+    font-size: 20px;
+    font-weight: bold;
+}

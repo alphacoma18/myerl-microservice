@@ -3,6 +3,7 @@ import Nav from "../components/nav/index";
 import styles from "./index.module.css";
 import WhyChoose from "../components/whyChoose/index";
 import IO from "../components/io/index";
+import FaqsAll from "../components/faqs/index";
 const App: NextPage = () => {
 	return (
 		<section className={styles.outermostSection}>
@@ -16,6 +17,8 @@ const App: NextPage = () => {
 				<br />
 				<hr className="horizontalRule" />
 				<WhyChoose />
+				<hr className="horizontalRule" />
+				<FaqsAll />
 			</div>
 		</section>
 	);

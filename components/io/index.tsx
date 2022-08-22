@@ -9,7 +9,7 @@ const IO: React.FC = () => {
 				<input
 					type="text"
 					className={styles.generateURLInput}
-					placeholder=">>> Enter your URL"
+					placeholder=">>> Enter your valid URL (min. 10 chars)"
 					required
 					minLength={10}
 					maxLength={2048}
