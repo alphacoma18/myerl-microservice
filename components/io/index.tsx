@@ -5,7 +5,7 @@ const IO: React.FC = () => {
 	const inputRef = useRef<HTMLInputElement>(null);
 	const outputRef = useRef<HTMLInputElement>(null);
 	const [urlInput, setUrlInput] = useState<string>("");
-	const [submitDisabled, setSubmitDisabled] = useState<boolean>(false);
+	const [erlOutput, setErlOutput] = useState<string>("");
 	const [error, setError] = useState<string>("");
 	const [showError, setShowError] = useState<boolean>(false);
 	const regex =
@@ -13,23 +13,25 @@ const IO: React.FC = () => {
 	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		try {
 			e.preventDefault();
-			setSubmitDisabled((e) => !e);
 			const pass = regex.test(urlInput);
 			if (urlInput.length < 10)
 				throw "Error: URL must be minimum of 10 characters";
 			if (!pass) throw "Error: Invalid URL";
-			await axios.post(urlInput);
+			const res = await axios.post("/", { urlInput });
+			// if (res.status === 401) throw `${res.data.err}`;
+			console.log(res);
+
+			const x = res.data?.erl;
+			console.log(x);
+
+			if (!x) throw "Error: Server Error";
+			setErlOutput(x);
 			outputRef.current?.focus();
 		} catch (err: any) {
 			setError(err);
 			setShowError(true);
-			setSubmitDisabled((e) => !e);
 			inputRef.current?.focus();
 		}
-	}
-	function handleClear() {
-		setUrlInput((prev) => "");
-		inputRef.current?.focus();
 	}
 	useEffect(() => {
 		setShowError(false);
@@ -40,11 +42,7 @@ const IO: React.FC = () => {
 			<div className={showError ? styles.errorShow : styles.errorHide}>
 				<h3>{error}</h3>
 			</div>
-			<form
-				id="url-input-form"
-				className={styles.inputDiv}
-				onSubmit={handleSubmit}
-			>
+			<form className={styles.inputDiv} onSubmit={handleSubmit}>
 				<input
 					ref={inputRef}
 					type="text"
@@ -66,6 +64,7 @@ const IO: React.FC = () => {
 					placeholder="<<< Await Shortened Encrypted URL"
 					readOnly
 					ref={outputRef}
+					value={erlOutput}
 				/>
 			</div>
 		</>

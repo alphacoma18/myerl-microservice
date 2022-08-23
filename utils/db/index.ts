@@ -20,15 +20,12 @@ const ERLSchema = new Schema<IERL>({
 		required: true,
 	},
 });
-const ERL = model<IERL>("ERL", ERLSchema);
+const ERL = mongoose.models.ERL || model<IERL>("ERL", ERLSchema);
 run().catch((err) => console.log(err));
 async function run() {
-	await connect(process.env.MONGO_DEV_URI!, {
+	await connect(process.env.MONGO_URI!, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
-		useCreateIndex: true,
-		useFindAndModify: false,
-		poolSize: parseInt(process.env.POOL_SIZE!),
 	} as ConnectOptions);
 	console.log("Connected to Distribution API Database - Initial Connection");
 }
