@@ -20,7 +20,7 @@ const FaqsAll: React.FC = () => {
 	return (
 		<>
 			<div className={styles.flexFaqs}>
-				<h2 className={styles.headerFaqs} id="#link-faqs">
+				<h2 className={styles.headerFaqs} id="link-faqs">
 					Frequently Asked Questions
 				</h2>
 				<Faqs

@@ -6,18 +6,18 @@ const Nav: React.FC = () => {
 		<nav className={styles.outermostNav}>
 			<div></div>
 			<div>
-				<Link href="#">
-					<a className={styles.navButton}>Home</a>
+				<Link href="/#link-home">
+					<a className={styles.navLink}>Home</a>
 				</Link>
-				<Link href="#link-about">
-					<a className={styles.navButton}>About</a>
+				<Link href="/#link-about">
+					<a className={styles.navLink}>About</a>
 				</Link>
-				<a href="#link-faqs" className={styles.navButton}>
+				<a href="/#link-faqs" className={styles.navLink}>
 					FAQs
 				</a>
-				<button className={styles.navButton}>T&Cs</button>
-				<button className={styles.navButton}>API</button>
-				<button className={styles.navButton}>Contact Us</button>
+				<button className={styles.navLink}>T&Cs</button>
+				<button className={styles.navLink}>API</button>
+				<button className={styles.navLink}>Contact Us</button>
 			</div>
 		</nav>
 	);

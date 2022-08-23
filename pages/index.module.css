@@ -1,7 +1,7 @@
 .outermostSection {
 }
 .widthReducer {
-	width: 94vw;
+	width: clamp(0px, 94vw, 1400px);
 	margin: auto;
 }
 .mainHeader {
