@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import WhyChoose from "../components/whyChoose/index";
 import IO from "../components/io/index";
 import FaqsAll from "../components/faqs/index";
+import TermsAndConditions from "../components/t&c";
 const App: NextPage = () => {
 	return (
 		<section className={styles.outermostSection}>
@@ -23,6 +24,7 @@ const App: NextPage = () => {
 				<hr className="horizontalRule" />
 				<FaqsAll />
 				<hr className="horizontalRule" />
+				<TermsAndConditions />
 			</div>
 		</section>
 	);

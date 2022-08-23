@@ -12,10 +12,12 @@ const Nav: React.FC = () => {
 				<Link href="/#link-about">
 					<a className={styles.navLink}>About</a>
 				</Link>
-				<a href="/#link-faqs" className={styles.navLink}>
-					FAQs
-				</a>
-				<button className={styles.navLink}>T&Cs</button>
+				<Link href="/#link-faqs">
+					<a className={styles.navLink}>FAQs</a>
+				</Link>
+				<Link href="/#link-terms">
+					<a className={styles.navLink}>T&Cs</a>
+				</Link>
 				<button className={styles.navLink}>API</button>
 				<button className={styles.navLink}>Contact Us</button>
 			</div>

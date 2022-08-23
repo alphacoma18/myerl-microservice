@@ -1,0 +1,27 @@
+.flexTerms {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	width: 100%;
+}
+.headerTerms {
+	width: 100%;
+	text-align: center;
+}
+.itemTerms {
+	width: 85%;
+	padding: 0.4rem;
+	text-align: start;
+}
+.summary {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0.4rem;
+}
+@media screen and (max-width: 480px) {
+	.itemTerms {
+		width: 90%;
+	}
+}

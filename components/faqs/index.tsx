@@ -7,12 +7,10 @@ type Props = {
 const Faqs: React.FC<Props> = ({ header, description }) => {
 	return (
 		<>
-			<div className={styles.itemFaqs}>
-				<details>
-					<summary className={styles.summary}>{header}</summary>
-					{description}
-				</details>
-			</div>
+			<details className={styles.itemFaqs}>
+				<summary className={styles.summary}>{header}</summary>
+				{description}
+			</details>
 		</>
 	);
 };
@@ -36,7 +34,7 @@ const FaqsAll: React.FC = () => {
 				<Faqs
 					header={"Q: What limitations are there?"}
 					description={
-						"A: While there are no limitations on how many ERLs you can generate, we just ask you to please keep the URLs meaningful and to be of use"
+						"A: While there are no limitations on how many ERLs you can generate, we just ask you to please keep the URLs meaningful and to be of wise use"
 					}
 				/>
 				<Faqs
@@ -60,7 +58,7 @@ const FaqsAll: React.FC = () => {
 				<Faqs
 					header={"Q: Do the generated ERL's expire?"}
 					description={
-						"A: Technically it will not for as long as the web is still around or this site doesn't get nuked."
+						"A: Technically it will not for as long as the web is still around or this site or the database doesn't get nuked."
 					}
 				/>
 			</div>
