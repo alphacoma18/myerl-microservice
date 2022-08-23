@@ -4,4 +4,8 @@ function encrypt(url: string): string {
 	const encryptedURL = cryptr.encrypt(url);
 	return encryptedURL;
 }
-export default encrypt;
+function decrypt(url: string): string {
+	const decryptedURL = cryptr.decrypt(url);
+	return decryptedURL;
+}
+export { encrypt, decrypt };

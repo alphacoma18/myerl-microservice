@@ -8,13 +8,13 @@ const IO: React.FC = () => {
 	const [urlInput, setUrlInput] = useState<string>("");
 	const [erlOutput, setErlOutput] = useState<string>("");
 	const [error, setError] = useState<string>("");
-	const [spinner, setSpinner] = useState<boolean>(false);
+	const [showSpinner, setShowSpinner] = useState<boolean>(false);
 	const [showError, setShowError] = useState<boolean>(false);
 	const regex =
 		/^(?:(?:https?|ftp):\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,}))\.?)(?::\d{2,5})?(?:[/?#]\S*)?$/i;
 	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		try {
-			setSpinner((prev) => !prev);
+			setShowSpinner(true);
 			e.preventDefault();
 			const pass = regex.test(urlInput);
 			if (urlInput.length < 10)
@@ -22,18 +22,15 @@ const IO: React.FC = () => {
 			if (!pass) throw "Error: Invalid URL";
 			const res = await axios.post("/", { urlInput });
 			if (res.status === 401) throw `${res.data.err}`;
-			console.log(res);
-
 			const x = res.data?.erl;
-			console.log(x);
-
 			if (!x) throw "Error: Server Error";
 			setErlOutput(x);
+			setShowSpinner(false);
 			outputRef.current?.focus();
 		} catch (err: any) {
 			setError(err);
 			setShowError(true);
-			setSpinner((prev) => !prev);
+			setShowSpinner(false);
 			inputRef.current?.focus();
 		}
 	}
@@ -43,7 +40,7 @@ const IO: React.FC = () => {
 
 	return (
 		<>
-			{spinner ?? <Spinner />}
+			{showSpinner && <Spinner />}
 			<div className={showError ? styles.errorShow : styles.errorHide}>
 				<h3>{error}</h3>
 			</div>

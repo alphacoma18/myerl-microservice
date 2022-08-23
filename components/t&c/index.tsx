@@ -9,14 +9,15 @@ const TermsAndConditions = () => {
 				</h1>
 				<p>
 					These terms and conditions outline the rules and regulations
-					for the use of MyERL Microservice's site and Services.
+					for the use of MyERL Microservice&apos;s site and Services.
 				</p>
 				<div className={styles.itemTerms}>
 					<p>
 						By accessing this site we assume you accept these terms
 						and conditions in full. Do not continue to use MyERL
-						Microservice's site and services if you do not accept
-						all of the terms and conditions stated on this section.
+						Microservice&apos;s site and services if you do not
+						accept all of the terms and conditions stated on this
+						section.
 					</p>
 					<br />
 					<details>
