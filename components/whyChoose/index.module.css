@@ -12,7 +12,11 @@
     width: 100%;
 }
 .itemWhyChoose {
-    /* background: lightblue; */
     width: 40%;
     padding: 1rem;
+}
+@media screen and (max-width: 480px) {
+    .itemWhyChoose {
+        width: 100%;
+    }
 }

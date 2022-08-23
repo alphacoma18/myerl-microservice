@@ -5,6 +5,7 @@ const IO: React.FC = () => {
 	const inputRef = useRef<HTMLInputElement>(null);
 	const outputRef = useRef<HTMLInputElement>(null);
 	const [urlInput, setUrlInput] = useState<string>("");
+	const [submitDisabled, setSubmitDisabled] = useState<boolean>(false);
 	const [error, setError] = useState<string>("");
 	const [showError, setShowError] = useState<boolean>(false);
 	const regex =
@@ -12,6 +13,7 @@ const IO: React.FC = () => {
 	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		try {
 			e.preventDefault();
+			setSubmitDisabled((e) => !e);
 			const pass = regex.test(urlInput);
 			if (urlInput.length < 10)
 				throw "Error: URL must be minimum of 10 characters";
@@ -21,6 +23,7 @@ const IO: React.FC = () => {
 		} catch (err: any) {
 			setError(err);
 			setShowError(true);
+			setSubmitDisabled((e) => !e);
 			inputRef.current?.focus();
 		}
 	}
@@ -65,12 +68,6 @@ const IO: React.FC = () => {
 					ref={outputRef}
 				/>
 			</div>
-			<button form="url-input-form" type="submit">
-				Encrypt URL
-			</button>
-			<button type="button" onClick={handleClear}>
-				Clear Input
-			</button>
 		</>
 	);
 };

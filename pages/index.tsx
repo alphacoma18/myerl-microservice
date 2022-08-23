@@ -6,12 +6,12 @@ import IO from "../components/io/index";
 import FaqsAll from "../components/faqs/index";
 const App: NextPage = () => {
 	return (
-		<section className={styles.outermostSection}>
+		<section className={styles.outermostSection} id="#link-home">
 			<Nav />
 			<div className={styles.widthReducer}>
 				<div className={styles.mainHeader}>
 					<h1>MyERL: Encrypted URL Microservice</h1>
-					<q>The URL shortener that has your privacy's back.</q>
+					<q>The URL shortener that has your privacy's&nbsp;back.</q>
 				</div>
 				<IO />
 				<br />

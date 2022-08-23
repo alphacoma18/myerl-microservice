@@ -1,13 +1,20 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./index.module.css";
 const Nav: React.FC = () => {
 	return (
-        <nav className={styles.outermostNav}>
-            <div></div>
+		<nav className={styles.outermostNav}>
+			<div></div>
 			<div>
-				<button className={styles.navButton}>Home</button>
-				<button className={styles.navButton}>About</button>
-				<button className={styles.navButton}>FAQs</button>
+				<Link href="#">
+					<a className={styles.navButton}>Home</a>
+				</Link>
+				<Link href="#link-about">
+					<a className={styles.navButton}>About</a>
+				</Link>
+				<a href="#link-faqs" className={styles.navButton}>
+					FAQs
+				</a>
 				<button className={styles.navButton}>T&Cs</button>
 				<button className={styles.navButton}>API</button>
 				<button className={styles.navButton}>Contact Us</button>

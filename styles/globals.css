@@ -21,6 +21,7 @@ body {
 	height: 400vh;
 }
 a {
+	font-size: 0.8rem;
 	color: inherit;
 	text-decoration: none;
 }
