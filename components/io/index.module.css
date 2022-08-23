@@ -11,3 +11,22 @@
 	font-size: inherit;
 	margin: auto;
 }
+.errorHide {
+	width: 100%;
+	display: none;
+	background: red;
+	border-radius: 50px;
+	margin: auto;
+	padding: 4px;
+	text-align: center;
+}
+.errorShow {
+	width: 100%;
+	display: block;
+	background: red;
+	color: yellow;
+	border-radius: 50px;
+	margin: auto;
+	padding: 4px;
+	text-align: center;
+}

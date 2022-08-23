@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 export const axios = Axios.create({
-	baseURL: "https://myerl.vercel.app/api",
+	baseURL: "http://localhost:3000/api",
 	headers: {
 		"Content-Type": "application/json",
 		"Access-Control-Allow-Credentials": true,
