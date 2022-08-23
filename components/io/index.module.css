@@ -1,0 +1,41 @@
+.inputDiv,
+.outputDiv {
+	width: 100%;
+	display: flex;
+}
+.generateURLInput,
+.generateURLOutput {
+	width: clamp(0px, 80%, 500px);
+	padding-left: 58px;
+	padding-right: 58px;
+	height: 70px;
+	font-size: inherit;
+	margin: auto;
+}
+.errorHide {
+	width: 40%;
+	display: none;
+	background: red;
+	border-radius: 50px;
+	margin: auto;
+	padding: 4px;
+	text-align: center;
+}
+.errorShow {
+	width: 40%;
+	display: block;
+	background: red;
+	border-radius: 50px;
+	margin: auto;
+	padding: 0.4rem;
+	margin: 0.4rem auto;
+	text-align: center;
+}
+@media screen and (max-width: 480px) {
+	.generateURLInput,
+	.generateURLOutput {
+		padding-left: 29px;
+		padding-right: 29px;
+		height: 35px;
+	}
+}

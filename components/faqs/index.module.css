@@ -1,0 +1,29 @@
+.headerFaqs {
+	width: 100%;
+	text-align: center;
+}
+.flexFaqs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	width: 100%;
+}
+.itemFaqs {
+	width: 85%;
+	padding: 0.4rem;
+}
+.summary {
+	font-size: 20px;
+	font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+	.itemFaqs {
+		width: 100%;
+	}
+	.summary {
+		font-size: 16px;
+		font-weight: bold;
+	}
+}

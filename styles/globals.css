@@ -17,16 +17,15 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	z-index: unset;
 	line-height: 1.6rem;
-	font-size: 16px;
-	height: 400vh;
 }
 a {
+	font-size: 0.8rem;
 	color: inherit;
 	text-decoration: none;
 }
 .horizontalRule {
 	width: 70%;
-	margin: auto;
+	margin: 1rem auto;
 }
 @media (prefers-color-scheme: dark) {
 	html {

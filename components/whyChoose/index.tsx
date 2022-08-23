@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./index.module.css"
+import styles from "./index.module.css";
 
 const WhyChoose: React.FC = () => {
 	return (
 		<>
 			<div className={styles.flexWhyChoose}>
-				<h2 className={styles.headerWhyChoose}>
+				<h2 className={styles.headerWhyChoose} id="link-about">
 					Why choose MyERL Microservice?
 				</h2>
 				<div className={styles.itemWhyChoose}>
@@ -50,9 +50,9 @@ const WhyChoose: React.FC = () => {
 					<h3>Free and Unlimited</h3>
 					<ul>
 						<li>
-							Using MongoDB's generous service, we can safely
-							store humongous quantities of ERL's while providing
-							the service for free.
+							Using MongoDB&apos;s generous service, we can safely
+							store humongous quantities of ERL&apos;s while
+							providing the service for free.
 						</li>
 					</ul>
 				</div>
@@ -79,8 +79,8 @@ const WhyChoose: React.FC = () => {
 					<h3>Trusted and Open Source</h3>
 					<ul>
 						<li>
-							Don't trust us yet? Get a full glimpse at the codes
-							that power the site available at GitHub.
+							Don&apos;t trust us yet? Get a full glimpse at the
+							codes that power the site available at GitHub.
 						</li>
 					</ul>
 				</div>
