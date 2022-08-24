@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./index.module.css";
+import Image from "next/image";
 const Nav: React.FC = () => {
 	return (
 		<nav className={styles.outermostNav}>
-			<div></div>
+			<div>
+				<Image src={"/logo/logo.png"} width={50} height={50} />
+			</div>
 			<div className={styles.navLinkHolder}>
 				<Link href="/#link-home">
 					<a className={styles.navLink}>Home</a>
