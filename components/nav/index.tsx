@@ -5,7 +5,7 @@ const Nav: React.FC = () => {
 	return (
 		<nav className={styles.outermostNav}>
 			<div></div>
-			<div>
+			<div className={styles.navLinkHolder}>
 				<Link href="/#link-home">
 					<a className={styles.navLink}>Home</a>
 				</Link>
@@ -18,7 +18,9 @@ const Nav: React.FC = () => {
 				<Link href="/#link-terms">
 					<a className={styles.navLink}>T&Cs</a>
 				</Link>
-				<button className={styles.navLink}>API</button>
+				<Link href="/#link-api">
+					<a className={styles.navLink}>API</a>
+				</Link>
 				<Link href="/#link-contact">
 					<a className={styles.navLink}>Contact Us</a>
 				</Link>

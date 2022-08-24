@@ -41,6 +41,15 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	z-index: unset;
 	line-height: 1.6rem;
+	animation: opacity 200ms linear 0s 1 normal;
+}
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 a {
 	color: inherit;
@@ -69,6 +78,7 @@ textarea {
 }
 .horizontalRule {
 	width: 70%;
+	color: var(--theme-blue);
 	margin: 1rem auto;
 }
 @media (prefers-color-scheme: dark) {

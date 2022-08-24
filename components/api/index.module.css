@@ -1,0 +1,17 @@
+.flexApi {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	width: 100%;
+}
+.headerApi {
+	width: 100%;
+	text-align: center;
+}
+.itemApi {
+	width: 85%;
+	padding: 0.4rem;
+	text-align: start;
+}

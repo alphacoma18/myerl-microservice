@@ -11,7 +11,7 @@
 	text-align: center;
 }
 .itemContact {
-	width: clamp(0px, 50%, 750px);
+	width: clamp(0px, 75%, 750px);
 	padding: 0.4rem;
 	text-align: start;
 }
