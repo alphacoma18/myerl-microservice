@@ -1,3 +1,20 @@
+.errorHide {
+	display: none;
+}
+.errorShow {
+	width: 40%;
+	display: block;
+	background: var(--error-red);
+	border-radius: 50px;
+	padding: 0.4rem;
+	margin: 0.4rem auto;
+	text-align: center;
+}
+.flexIOForm {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
 .inputDiv,
 .outputDiv {
 	width: 100%;
@@ -9,32 +26,7 @@
 	padding-left: 58px;
 	padding-right: 58px;
 	height: 70px;
-	font-size: inherit;
 	margin: auto;
-}
-.errorHide {
-	width: 40%;
-	display: none;
-	background: var(--error-red);
-	border-radius: 50px;
-	margin: auto;
-	padding: 4px;
-	text-align: center;
-}
-.errorShow {
-	width: 40%;
-	display: block;
-	background: var(--error-red);
-	border-radius: 50px;
-	margin: auto;
-	padding: 0.4rem;
-	margin: 0.4rem auto;
-	text-align: center;
-}
-.flexIOForm {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.4rem;
 }
 @media screen and (max-width: 480px) {
 	.generateURLInput,

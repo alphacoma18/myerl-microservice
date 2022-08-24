@@ -2,7 +2,10 @@ import ERL from "../../utils/db/index";
 import { encrypt } from "../../utils/cryptr";
 import NewDate from "../../utils/date";
 import { NextApiRequest, NextApiResponse } from "next";
-export default async function ApiHandler(req: NextApiRequest, res: NextApiResponse) {
+export default async function ApiHandler(
+	req: NextApiRequest,
+	res: NextApiResponse
+) {
 	try {
 		const { urlInput } = req.body;
 		if (!urlInput) throw "Error: Undefined URL";
@@ -18,7 +21,6 @@ export default async function ApiHandler(req: NextApiRequest, res: NextApiRespon
 				generated_url,
 				post_date: NewDate(),
 			});
-			console.log(urlInput);
 			// const erl = `https://myerl.vercel.app/api/${generated_url}`;
 			const erl = `http://localhost:3000/api/${generated_url}`;
 			return res.json({ erl });

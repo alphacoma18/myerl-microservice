@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
 	const [senderName, setSenderName] = useState<string>("");
 	const [senderEmail, setSenderEmail] = useState<string>("");
 	const [senderMessage, setSenderMessage] = useState<string>("");
-	const [showSpinner, setShowSpinner] = useState(false);
+	const [showSpinner, setShowSpinner] = useState<boolean>(false);
 	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		try {
 			e.preventDefault();
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
 			});
 			handleClear();
 			setShowSpinner(false);
-		} catch (err) {
+		} catch (err: any) {
 			handleClear();
 			setShowSpinner(false);
 		}

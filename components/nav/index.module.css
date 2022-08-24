@@ -10,10 +10,7 @@
 	top: 0;
 }
 .navLink {
-	border: none;
 	padding: 1rem;
-	background: none;
-	cursor: pointer;
 	font-weight: bold;
 }
 

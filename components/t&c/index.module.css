@@ -20,9 +20,6 @@
 	font-weight: bold;
 	padding: 0.4rem;
 }
-@media screen and (max-width: 768px) {
-	
-}
 @media screen and (max-width: 480px) {
 	.itemTerms {
 		width: 90%;

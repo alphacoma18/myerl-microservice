@@ -1,19 +1,19 @@
 .loadingSpinnerOuter {
+	position: fixed;
 	width: 100vw;
+	height: 100vh;
 	top: 0;
 	left: 0;
-	height: 100vh;
-	position: fixed;
 	background: rgba(0, 0, 0, 0.2);
 }
 .loadingSpinnerDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 50%;
 	height: 100%;
 	left: 25%;
 	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .loadingSpinner {
 	border: 1rem solid var(--theme-white);
