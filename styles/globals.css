@@ -1,5 +1,16 @@
 :root {
+	--theme-white: #ffffff;
+	--theme-black: #1a2632;
+	--theme-blue: #0dbdfd;
+
+	--input-black: #233343;
+
+	--error-red: #ff0000;
 	--fast-transition: all 100ms linear 0s;
+}
+::selection {
+	background: var(--theme-blue);
+	color: var(--theme-white);
 }
 ::-webkit-scrollbar {
 	width: 1vh;
@@ -19,9 +30,29 @@ body {
 	line-height: 1.6rem;
 }
 a {
-	font-size: 0.8rem;
 	color: inherit;
 	text-decoration: none;
+	user-select: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: var(--theme-blue);
+	transition: var(--fast-transition);
+}
+summary {
+	user-select: none;
+}
+summary:hover,
+summary:active,
+summary:focus {
+	color: var(--theme-blue);
+	transition: var(--fast-transition);
+	cursor: pointer;
+}
+textarea {
+	font-family: inherit;
+	resize: vertical;
 }
 .horizontalRule {
 	width: 70%;
@@ -32,7 +63,7 @@ a {
 		color-scheme: dark;
 	}
 	body {
-		color: white;
-		background: black;
+		color: var(--theme-white);
+		background: var(--theme-black);
 	}
 }

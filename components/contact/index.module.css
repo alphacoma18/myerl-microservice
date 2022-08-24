@@ -1,0 +1,44 @@
+.flexContact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	width: 100%;
+}
+.headerContact {
+	width: 100%;
+	text-align: center;
+}
+.itemContact {
+	width: clamp(0px, 50%, 750px);
+	padding: 0.4rem;
+	text-align: start;
+}
+.flexFormInput {
+	display: flex;
+	gap: 0.4rem;
+	flex-wrap: wrap;
+}
+.itemFormInput {
+	display: block;
+	padding: 1rem;
+	width: 100%;
+	font-size: inherit;
+	margin: auto;
+}
+.headerEmail {
+	text-align: center;
+	width: 100%;
+}
+@media screen and (max-width: 768px) {
+	.itemContact {
+		width: 100%;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.itemFormInput {
+		background: var(--input-black);
+		border: 3px solid var(--theme-blue);
+	}
+}

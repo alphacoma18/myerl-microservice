@@ -15,7 +15,7 @@
 .errorHide {
 	width: 40%;
 	display: none;
-	background: red;
+	background: var(--error-red);
 	border-radius: 50px;
 	margin: auto;
 	padding: 4px;
@@ -24,12 +24,24 @@
 .errorShow {
 	width: 40%;
 	display: block;
-	background: red;
+	background: var(--error-red);
 	border-radius: 50px;
 	margin: auto;
 	padding: 0.4rem;
 	margin: 0.4rem auto;
 	text-align: center;
+}
+.flexIOForm {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+@media (prefers-color-scheme: dark) {
+	.generateURLInput,
+	.generateURLOutput {
+		background: var(--input-black);
+		border: 3px solid var(--theme-blue);
+	}
 }
 @media screen and (max-width: 480px) {
 	.generateURLInput,

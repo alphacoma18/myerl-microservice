@@ -44,30 +44,32 @@ const IO: React.FC = () => {
 			<div className={showError ? styles.errorShow : styles.errorHide}>
 				<h3>{error}</h3>
 			</div>
-			<form className={styles.inputDiv} onSubmit={handleSubmit}>
-				<input
-					ref={inputRef}
-					type="text"
-					className={styles.generateURLInput}
-					placeholder=">>> Enter your valid URL (min. 10 chars)"
-					required
-					minLength={10}
-					maxLength={2048}
-					onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-						setUrlInput(e.currentTarget.value)
-					}
-					value={urlInput}
-				/>
-			</form>
-			<div className={styles.outputDiv}>
-				<input
-					type="text"
-					className={styles.generateURLOutput}
-					placeholder="<<< Await Shortened Encrypted URL"
-					readOnly
-					ref={outputRef}
-					value={erlOutput}
-				/>
+			<div className={styles.flexIOForm}>
+				<form className={styles.inputDiv} onSubmit={handleSubmit}>
+					<input
+						ref={inputRef}
+						type="text"
+						className={styles.generateURLInput}
+						placeholder=">>> Enter your valid URL (min. 10 chars)"
+						required
+						minLength={10}
+						maxLength={2048}
+						onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+							setUrlInput(e.currentTarget.value)
+						}
+						value={urlInput}
+					/>
+				</form>
+				<div className={styles.outputDiv}>
+					<input
+						type="text"
+						className={styles.generateURLOutput}
+						placeholder="<<< Await Shortened Encrypted URL"
+						readOnly
+						ref={outputRef}
+						value={erlOutput}
+					/>
+				</div>
 			</div>
 		</>
 	);
