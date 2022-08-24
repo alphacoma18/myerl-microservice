@@ -1,21 +1,21 @@
 .headerWhyChoose {
-    width: 100%;
-    text-align: center;
+	width: 100%;
+	text-align: center;
 }
 .flexWhyChoose {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .4rem;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	width: 100%;
 }
 .itemWhyChoose {
-    width: 40%;
-    padding: 1rem;
+	width: 40%;
+	padding: 1rem;
 }
 @media screen and (max-width: 480px) {
-    .itemWhyChoose {
-        width: 100%;
-    }
+	.itemWhyChoose {
+		width: 100%;
+	}
 }

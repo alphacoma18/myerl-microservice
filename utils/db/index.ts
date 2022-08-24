@@ -1,4 +1,4 @@
-import mongoose, { Connection, ConnectOptions } from "mongoose";
+import mongoose, { ConnectOptions } from "mongoose";
 import { Schema, model, connect } from "mongoose";
 
 interface IERL {

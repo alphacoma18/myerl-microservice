@@ -1,7 +1,10 @@
 import ERL from "../../utils/db";
 import { decrypt } from "../../utils/cryptr";
 import { NextApiRequest, NextApiResponse } from "next";
-async function ErlHandler(req: NextApiRequest, res: NextApiResponse) {
+export default async function ErlHandler(
+	req: NextApiRequest,
+	res: NextApiResponse
+) {
 	try {
 		const { url } = req;
 		if (url?.length !== 13) throw "Error: Invalid ERL";
@@ -16,4 +19,3 @@ async function ErlHandler(req: NextApiRequest, res: NextApiResponse) {
 		res.json({ err });
 	}
 }
-export default ErlHandler;

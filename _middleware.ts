@@ -6,7 +6,7 @@ export default function Middleware(req: NextApiRequest, res: NextApiResponse) {
 		const siteUrl = "(http://localhost:3000.app)";
 		const apiUrl = "(https://localhost:3000/api)";
 		const regex = new RegExp(
-			`^${siteUrl}$|^${siteUrl}/([a-zA-Z0-9]{8})W*$|^${apiUrl}$|^${apiUrl}/([a-zA-Z0-9]{8})W*$`
+			`^${siteUrl}|^${siteUrl}/([a-zA-Z0-9]{8})W*$|^${apiUrl}$|^${apiUrl}/([a-zA-Z0-9]{8})W*$|^${apiUrl}/mail`
 		);
 		if (!url) throw "Error: Undefined URL";
 		if (!regex.test(url)) throw "Error: Unauthorized Access";

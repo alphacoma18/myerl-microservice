@@ -1,6 +1,5 @@
 .outermostNav {
 	border-top: 3px solid var(--theme-blue);
-	padding: 0.4rem;
 	background: var(--theme-white);
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
 	display: flex;
@@ -9,11 +8,11 @@
 	position: sticky;
 	top: 0;
 }
-.navLink {
-	border: none;
+.navLinkHolder {
 	padding: 1rem;
-	background: none;
-	cursor: pointer;
+}
+.navLink {
+	padding: 1rem;
 	font-weight: bold;
 }
 
