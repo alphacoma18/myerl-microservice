@@ -4,7 +4,10 @@ const Credits: React.FC = () => {
 	return (
 		<>
 			<h4 className={styles.credits}>
-				MIT License Copyright (c) 2022 Alpha Romer N. Coma
+				MIT License Copyright (c) 2022{" "}
+				<a href="https://www.linkedin.com/in/alpha-coma/">
+					Alpha Romer N. Coma
+				</a>
 			</h4>
 		</>
 	);

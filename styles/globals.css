@@ -66,4 +66,20 @@ textarea {
 		color: var(--theme-white);
 		background: var(--theme-black);
 	}
+	button {
+		border: 3px solid var(--theme-blue);
+		background: var(--input-black);
+		transition: var(--fast-transition);
+	}
+	button:hover,
+	button:active,
+	button:focus {
+		border: 3px solid var(--theme-blue);
+		background: var(--theme-blue);
+	}
+	input,
+	textarea {
+		background: var(--input-black);
+		border: 3px solid var(--theme-blue);
+	}
 }

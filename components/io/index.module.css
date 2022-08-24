@@ -36,13 +36,6 @@
 	flex-wrap: wrap;
 	gap: 0.4rem;
 }
-@media (prefers-color-scheme: dark) {
-	.generateURLInput,
-	.generateURLOutput {
-		background: var(--input-black);
-		border: 3px solid var(--theme-blue);
-	}
-}
 @media screen and (max-width: 480px) {
 	.generateURLInput,
 	.generateURLOutput {

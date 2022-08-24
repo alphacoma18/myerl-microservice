@@ -2,7 +2,7 @@ import ERL from "../../utils/db/index";
 import { encrypt } from "../../utils/cryptr";
 import NewDate from "../../utils/date";
 import { NextApiRequest, NextApiResponse } from "next";
-async function ApiHandler(req: NextApiRequest, res: NextApiResponse) {
+export default async function ApiHandler(req: NextApiRequest, res: NextApiResponse) {
 	try {
 		const { urlInput } = req.body;
 		if (!urlInput) throw "Error: Undefined URL";
@@ -28,4 +28,3 @@ async function ApiHandler(req: NextApiRequest, res: NextApiResponse) {
 		return res.status(401).json({ err });
 	}
 }
-export default ApiHandler;
