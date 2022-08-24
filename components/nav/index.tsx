@@ -19,7 +19,9 @@ const Nav: React.FC = () => {
 					<a className={styles.navLink}>T&Cs</a>
 				</Link>
 				<button className={styles.navLink}>API</button>
-				<button className={styles.navLink}>Contact Us</button>
+				<Link href="/#link-contact">
+					<a className={styles.navLink}>Contact Us</a>
+				</Link>
 			</div>
 		</nav>
 	);

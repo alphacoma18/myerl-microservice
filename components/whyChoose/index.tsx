@@ -14,7 +14,7 @@ const WhyChoose: React.FC = () => {
 						<li>
 							Unlike other URL shorteners, ERL heavily encrypts
 							your URL and makes it so that only the application
-							can process and redirect the original URL
+							can process and redirect to the original URL
 						</li>
 					</ul>
 				</div>

@@ -15,7 +15,7 @@
 .errorHide {
 	width: 40%;
 	display: none;
-	background: red;
+	background: var(--error-red);
 	border-radius: 50px;
 	margin: auto;
 	padding: 4px;
@@ -24,7 +24,7 @@
 .errorShow {
 	width: 40%;
 	display: block;
-	background: red;
+	background: var(--error-red);
 	border-radius: 50px;
 	margin: auto;
 	padding: 0.4rem;

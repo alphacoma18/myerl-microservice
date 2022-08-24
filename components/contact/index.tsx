@@ -4,12 +4,10 @@ const Contact: React.FC = () => {
 	return (
 		<>
 			<div className={styles.flexContact}>
-				<h1 className={styles.headerContact} id="link-terms">
+				<h1 className={styles.headerContact} id="link-contact">
 					Contact Us
 				</h1>
-                <div className={styles.itemContact}>
-                    
-                </div>
+				<div className={styles.itemContact}></div>
 			</div>
 		</>
 	);
