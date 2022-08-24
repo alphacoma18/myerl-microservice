@@ -11,6 +11,7 @@
 	height: 70px;
 	font-size: inherit;
 	margin: auto;
+	
 }
 .errorHide {
 	width: 40%;
@@ -31,10 +32,16 @@
 	margin: 0.4rem auto;
 	text-align: center;
 }
+.flexIOForm {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .4rem;
+}
 @media (prefers-color-scheme: dark) {
 	.generateURLInput,
 	.generateURLOutput {
 		background: var(--input-black);
+		border: 3px solid var(--theme-blue);
 	}
 }
 @media screen and (max-width: 480px) {
