@@ -1,18 +1,37 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 import { axios } from "../../utils/axios";
+import Spinner from "../spinner";
 const Contact: React.FC = () => {
 	const [senderName, setSenderName] = useState<string>("");
 	const [senderEmail, setSenderEmail] = useState<string>("");
 	const [senderMessage, setSenderMessage] = useState<string>("");
-	function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+	const [showSpinner, setShowSpinner] = useState(false);
+	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		try {
 			e.preventDefault();
+			setShowSpinner(true);
 			console.log(senderName, senderEmail, senderMessage);
-		} catch (err) {}
+			await axios.post("/mail", {
+				senderName,
+				senderEmail,
+				senderMessage,
+			});
+			setShowSpinner(false);
+			handleClear();
+		} catch (err) {
+			setShowSpinner(false);
+			handleClear();
+		}
+	}
+	function handleClear() {
+		setSenderName("");
+		setSenderEmail("");
+		setSenderMessage("");
 	}
 	return (
 		<>
+			{showSpinner && <Spinner />}
 			<div className={styles.flexContact}>
 				<h1 className={styles.headerContact} id="link-contact">
 					Contact Us
@@ -24,7 +43,8 @@ const Contact: React.FC = () => {
 						onSubmit={handleSubmit}
 					>
 						<h3 className={styles.headerEmail}>
-							Have a message for us? Send us an email!
+							Have a message for us?
+							Send&nbsp;us&nbsp;an&nbsp;email!
 						</h3>
 						<input
 							className={styles.itemFormInput}
@@ -66,6 +86,7 @@ const Contact: React.FC = () => {
 							<button
 								className={styles.itemFormButtons}
 								type="reset"
+								onClick={handleClear}
 							>
 								Reset
 							</button>

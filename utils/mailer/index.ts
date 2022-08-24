@@ -30,17 +30,17 @@ export default async function MyERLMailer(
 	try {
 		const subject = `<MyERL-Mailer>: A new message from ${name}`;
 		const html = `
-    <div style="max-width: 600px; padding: 16px;">
-    <h1 style="text-align: center;">MyERL Microservice</h1>
-    <h4 style="text-align: center;>The URL shortener that has your privacy's back.</p>
-    <br />
-    <p>A message relay from ${name}</p>
-    <p>Valid email: ${googleEmail}</p>
-    <br />
-    <p>${message}</p>
-    <br />
-    <a style="display: block; text-align: center;" href="https://myerl.vercel.app">Visit The Site</a>
-    <p>An automatic email from MyERL microservice</p>
+    <div style="max-width: 600px; padding: 16px; margin: auto;">
+        <h1 style="text-align: center;">MyERL Microservice</h1>
+        <h4 style="text-align: center;">The URL shortener that has your privacy's back.</p>
+        <br />
+        <p>A message relay from ${name}</p>
+        <p>Valid email: ${googleEmail}</p>
+        <br />
+        <p>${message}</p>
+        <br />
+        <a style="display: block; text-align: center;" href="https://myerl.vercel.app">Visit The Site</a>
+        <p>An automatic email from MyERL microservice</p>
     </div>
     
     `;
