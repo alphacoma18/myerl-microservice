@@ -6,6 +6,7 @@ import IO from "../components/io/index";
 import FaqsAll from "../components/faqs/index";
 import TermsAndConditions from "../components/t&c";
 import Contact from "../components/contact";
+import Credits from "../components/credits";
 const App: NextPage = () => {
 	return (
 		<section className={styles.outermostSection}>
@@ -28,6 +29,8 @@ const App: NextPage = () => {
 				<TermsAndConditions />
 				<hr className="horizontalRule" />
 				<Contact />
+				<hr className="horizontalRule" />
+				<Credits />
 			</div>
 		</section>
 	);

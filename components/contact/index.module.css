@@ -11,13 +11,13 @@
 	text-align: center;
 }
 .itemContact {
-	width: 45%;
+	width: clamp(0px, 50%, 750px);
 	padding: 0.4rem;
 	text-align: start;
 }
 .flexFormInput {
 	display: flex;
-	gap: .4rem;
+	gap: 0.4rem;
 	flex-wrap: wrap;
 }
 .itemFormInput {
@@ -26,8 +26,15 @@
 	width: 100%;
 	font-size: inherit;
 	margin: auto;
-	font-family: inherit;
-	resize: vertical;
+}
+.headerEmail {
+	text-align: center;
+	width: 100%;
+}
+@media screen and (max-width: 768px) {
+	.itemContact {
+		width: 100%;
+	}
 }
 @media (prefers-color-scheme: dark) {
 	.itemFormInput {

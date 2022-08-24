@@ -14,15 +14,14 @@ const Contact: React.FC = () => {
 					Contact Us
 				</h1>
 				<div className={styles.itemContact}>
-					<h1>Hello World</h1>
-				</div>
-				<div className={styles.itemContact}>
 					<form
 						action="post"
 						className={styles.flexFormInput}
 						onSubmit={handleSubmit}
 					>
-						<h3>Have a message for us? Send us an email!</h3>
+						<h3 className={styles.headerEmail}>
+							Have a message for us? Send us an email!
+						</h3>
 						<input
 							className={styles.itemFormInput}
 							type="text"

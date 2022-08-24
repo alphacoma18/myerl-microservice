@@ -50,6 +50,10 @@ summary:focus {
 	transition: var(--fast-transition);
 	cursor: pointer;
 }
+textarea {
+	font-family: inherit;
+	resize: vertical;
+}
 .horizontalRule {
 	width: 70%;
 	margin: 1rem auto;
