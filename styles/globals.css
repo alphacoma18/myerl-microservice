@@ -1,7 +1,10 @@
 :root {
 	--theme-white: #ffffff;
-	--theme-black: #000000;
+	--theme-black: #1a2632;
 	--theme-blue: #0dbdfd;
+
+	--input-black: #233343;
+
 	--error-red: #ff0000;
 	--fast-transition: all 100ms linear 0s;
 }

@@ -7,7 +7,26 @@ const Contact: React.FC = () => {
 				<h1 className={styles.headerContact} id="link-contact">
 					Contact Us
 				</h1>
-				<div className={styles.itemContact}></div>
+				<div className={styles.itemContact}>
+					<form action="post">
+						<input
+							className={styles.itemFormInput}
+							type="text"
+							minLength={4}
+							required
+						/>
+						<input
+							className={styles.itemFormInput}
+							type="email"
+							minLength={10}
+							required
+						/>
+						<textarea
+							className={styles.itemFormInput}
+							required
+						></textarea>
+					</form>
+				</div>
 			</div>
 		</>
 	);

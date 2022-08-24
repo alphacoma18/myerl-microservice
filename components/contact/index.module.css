@@ -15,3 +15,9 @@
 	padding: 0.4rem;
 	text-align: start;
 }
+.itemFormInput {
+	display: block;
+	padding: 1rem;
+	font-size: inherit;
+	margin: auto;
+}
