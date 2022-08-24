@@ -58,16 +58,18 @@ const IO: React.FC = () => {
 							setUrlInput(e.currentTarget.value)
 						}
 						value={urlInput}
+						title="Enter Your valid URL (min. 10 chars)"
 					/>
 				</form>
 				<div className={styles.outputDiv}>
 					<input
 						type="text"
 						className={styles.generateURLOutput}
-						placeholder="<<< Await Shortened Encrypted URL"
+						placeholder="<<< Await shortened Encrypted URL"
 						readOnly
 						ref={outputRef}
 						value={erlOutput}
+						title="Await Your Shortened Encrypted URL"
 					/>
 				</div>
 			</div>

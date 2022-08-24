@@ -6,7 +6,7 @@ const Credits: React.FC = () => {
 			<h4 className={styles.credits}>
 				MIT License Copyright (c) 2022{" "}
 				<a href="https://www.linkedin.com/in/alpha-coma/">
-					Alpha Romer N. Coma
+					Alpha&nbsp;Romer&nbsp;N.&nbsp;Coma
 				</a>
 			</h4>
 		</>
