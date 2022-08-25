@@ -8,14 +8,27 @@
 	position: sticky;
 	top: 0;
 }
+.myerlLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px .4rem;
+}
 .navLinkHolder {
-	padding: 1rem;
+	padding: 1rem 0px;
 }
 .navLink {
 	padding: 1rem;
 	font-weight: bold;
 }
-
+@media screen and (max-width: 768px) {
+	.navLink {
+		font-size: 24px;
+	}
+	.linkSpan {
+		display: none;
+	}
+}
 @media (prefers-color-scheme: dark) {
 	.outermostNav {
 		background: var(--theme-black);

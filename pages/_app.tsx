@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-
+import "../public/fontello-77b449b8/css/fontello.css";
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
