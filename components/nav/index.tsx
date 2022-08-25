@@ -6,10 +6,18 @@ const Nav: React.FC = () => {
 	return (
 		<nav className={styles.outermostNav}>
 			<div className={styles.myerlLogo}>
-				<Image src={"/logo/index.png"} width={120} height={60} />
+				<a href=".">
+					<Image src={"/logo/index.png"} width={120} height={60} />
+				</a>
 			</div>
 			<div className={styles.myerlLogoDark}>
-				<Image src={"/logo/index_dark_2.png"} width={120} height={60} />
+				<a href=".">
+					<Image
+						src={"/logo/index_dark_2.png"}
+						width={120}
+						height={60}
+					/>
+				</a>
 			</div>
 			<div className={styles.navLinkHolder}>
 				<Link href="/#link-home">

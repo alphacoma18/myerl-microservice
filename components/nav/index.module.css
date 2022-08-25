@@ -13,12 +13,16 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0px 1rem;
+	line-height: 0px;
 }
 .myerlLogoDark {
 	display: none;
 }
 .navLinkHolder {
-	padding: 1rem 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .navLink {
 	padding: 1rem;
@@ -27,6 +31,7 @@
 @media screen and (max-width: 768px) {
 	.navLink {
 		font-size: 24px;
+		padding: 0.6rem;
 	}
 	.linkSpan {
 		display: none;
@@ -37,13 +42,13 @@
 		background: var(--theme-black);
 		box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.4);
 	}
+	.myerlLogo {
+		display: none;
+	}
 	.myerlLogoDark {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 0px 1rem;
-	}
-	.myerlLogo {
-		display: none;
 	}
 }
