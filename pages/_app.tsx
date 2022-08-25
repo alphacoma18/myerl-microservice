@@ -67,10 +67,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 					content="MyERL | URL Encryption Microservice"
 				/>
 				<meta property="og:type" content="website" />
-				{/* <meta
+				<meta
 					property="og:image"
-					content="https://myerl.vercel.app/"
-				/> */}
+					content="https://myerl.vercel.app/logo/index_dark_2.png"
+				/>
 				<meta property="og:image:type" content="image/jpg" />
 				<meta
 					property="og:image:alt"
@@ -98,10 +98,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:app:country" content="EN" />
-				{/* <meta
+				<meta
 					name="twitter:image"
-					content="https://myerl.vercel.app/"
-				/> */}
+					content="https://myerl.vercel.app/logo/index_dark_2.png"
+				/>
 				<meta name="twitter:image:type" content="image/jpg" />
 				<meta
 					name="twitter:image:alt"
