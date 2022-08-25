@@ -18,7 +18,6 @@ async function NodeMailer(subject: string, html: string) {
 		await transporter.sendMail(mailOptions);
 		return;
 	} catch (error) {
-		console.log(error);
 		return;
 	}
 }
