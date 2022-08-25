@@ -42,6 +42,7 @@ body {
 	z-index: unset;
 	line-height: 1.6rem;
 	animation: opacity 200ms linear 0s 1 normal;
+	border-bottom: 0.4rem solid var(--theme-blue);
 }
 @keyframes opacity {
 	0% {

@@ -14,7 +14,9 @@ const App: NextPage = () => {
 			<Nav />
 			<div className={styles.widthReducer}>
 				<div className={styles.mainHeader}>
-					<h1 id="link-home">MyERL: Encrypted URL Microservice</h1>
+					<h1 id="link-home">
+						<a href=".">MyERL: Encrypted URL Microservice</a>
+					</h1>
 					<q>
 						The URL shortener that has your
 						privacy&apos;s&nbsp;back.

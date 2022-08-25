@@ -1,24 +1,147 @@
 .outermostNav {
-	border-top: 3px solid var(--theme-blue);
-	background: var(--theme-white);
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
 	display: flex;
 	justify-content: space-between;
+	background: var(--theme-white);
+	border-top: 3px solid var(--theme-blue);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
-.navLinkHolder {
-	padding: 1rem;
+.myerlLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 1rem;
+}
+.myerlLogoDark {
+	display: none;
+}
+.myerlAnchor {
+	line-height: 0px;
+}
+.myerlMobile {
+	display: none;
+}
+.navLinkHolder,
+.navLinkHolderToggled {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	-o-transition: var(--fast-transition);
+	-moz-transition: var(--fast-transition);
+	-webkit-transition: var(--fast-transition);
+	transition: var(--fast-transition);
 }
 .navLink {
 	padding: 1rem;
 	font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+	.navLink {
+		font-size: 24px;
+		padding: 0.6rem;
+	}
+	.linkSpan {
+		display: none;
+	}
+}
 
+@media screen and (max-width: 480px) {
+	.closeMenu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		padding: 16px;
+		color: var(--color-whitesmoke);
+		font-weight: bold;
+
+		-o-transition: var(--fast-transition);
+		-moz-transition: var(--fast-transition);
+		-webkit-transition: var(--fast-transition);
+		transition: var(--fast-transition);
+	}
+	.outermostNav {
+		padding: 0.2rem;
+		justify-content: center;
+	}
+	.myerlLogo {
+		display: none;
+	}
+	.myerlLogoDark {
+		display: none;
+	}
+	.myerlMobile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.navLinkHolder,
+	.navLinkHolderToggled {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		height: 100%;
+		left: 0;
+		background: var(--bg-darkgreen);
+		overflow-x: hidden;
+		flex-direction: column;
+
+		-o-transition: var(--fast-transition);
+		-moz-transition: var(--fast-transition);
+		-webkit-transition: var(--fast-transition);
+		transition: var(--fast-transition);
+	}
+	.navLinkHolder {
+		width: 0px;
+	}
+	.navLinkHolderToggled {
+		width: 100%;
+		background: var(--theme-white);
+	}
+	.navLink {
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+	}
+	.navLink:hover,
+	.navLink:active,
+	.navLink:focus {
+		background: var(--theme-blue);
+		color: var(--theme-white);
+	}
+	.linkSpan {
+		display: inline;
+	}
+}
 @media (prefers-color-scheme: dark) {
 	.outermostNav {
 		background: var(--theme-black);
 		box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.4);
+	}
+	.myerlLogo {
+		display: none;
+	}
+	.myerlLogoDark {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 1rem;
+	}
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+	.navLinkHolder,
+	.navLinkHolderToggled {
+		background: var(--theme-black);
+	}
+	.myerlLogoDark {
+		display: none;
 	}
 }
