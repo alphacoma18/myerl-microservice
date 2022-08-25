@@ -22,7 +22,7 @@ export default async function ApiHandler(
 				post_date: NewDate(),
 			});
 			// const erl = `https://myerl.vercel.app/api/${generated_url}`;
-			const erl = `http://localhost:3000/api/${generated_url}`;
+			const erl = `https://myerl.vercel.app/api/${generated_url}`;
 			return res.json({ erl });
 		}
 		throw "Error: Method Unauthorized";
