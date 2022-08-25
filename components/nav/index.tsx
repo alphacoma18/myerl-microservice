@@ -6,12 +6,12 @@ const Nav: React.FC = () => {
 	return (
 		<nav className={styles.outermostNav}>
 			<div className={styles.myerlLogo}>
-				<a href=".">
+				<a href="." className={styles.myerlAnchor}>
 					<Image src={"/logo/index.png"} width={120} height={60} />
 				</a>
 			</div>
 			<div className={styles.myerlLogoDark}>
-				<a href=".">
+				<a href="." className={styles.myerlAnchor}>
 					<Image
 						src={"/logo/index_dark_2.png"}
 						width={120}
