@@ -6,7 +6,10 @@ const Nav: React.FC = () => {
 	return (
 		<nav className={styles.outermostNav}>
 			<div className={styles.myerlLogo}>
-				<Image src={"/logo/logo.png"} width={50} height={50} />
+				<Image src={"/logo/index.png"} width={120} height={60} />
+			</div>
+			<div className={styles.myerlLogoDark}>
+				<Image src={"/logo/index_dark_2.png"} width={120} height={60} />
 			</div>
 			<div className={styles.navLinkHolder}>
 				<Link href="/#link-home">
@@ -48,7 +51,7 @@ const Nav: React.FC = () => {
 				<Link href="/#link-contact">
 					<a className={styles.navLink}>
 						<i className="icon-mail-alt"></i>
-						<span className={styles.linkSpan}>Contact Us</span>
+						<span className={styles.linkSpan}>Contact</span>
 					</a>
 				</Link>
 			</div>

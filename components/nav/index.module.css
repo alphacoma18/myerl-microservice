@@ -12,7 +12,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0px .4rem;
+	padding: 0px 1rem;
+}
+.myerlLogoDark {
+	display: none;
 }
 .navLinkHolder {
 	padding: 1rem 0px;
@@ -33,5 +36,14 @@
 	.outermostNav {
 		background: var(--theme-black);
 		box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.4);
+	}
+	.myerlLogoDark {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 1rem;
+	}
+	.myerlLogo {
+		display: none;
 	}
 }
