@@ -39,6 +39,9 @@
 	padding: 1rem;
 	font-weight: bold;
 }
+.closeMenu {
+	display: none;
+}
 @media screen and (max-width: 768px) {
 	.navLink {
 		font-size: 24px;
@@ -51,6 +54,7 @@
 
 @media screen and (max-width: 480px) {
 	.closeMenu {
+		display: block;
 		position: absolute;
 		top: 0;
 		right: 0;

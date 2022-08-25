@@ -68,74 +68,60 @@
 	],
 	"screenshots": [
 		{
-			"src": "Landing page",
-			"sizes": "1280x720",
+			"src": "/screenshots/landing_dark_pc.webp",
+			"sizes": "1366x768",
 			"type": "image/webp",
 			"platform": "wide",
-			"label": "HomeScreen of MyERL: URL Encryption Microservice"
+			"label": "The PC dark mode landing page of MyERL microservice"
 		},
 		{
-			"src": "Why Choose MyERL?",
-			"sizes": "1280x720",
+			"src": "/screenshots/landing_dark_ipad.webp",
+			"sizes": "1024x768",
 			"type": "image/webp",
 			"platform": "wide",
-			"label": "List of numerous reasons why you should use MyERL"
+			"label": "The iPad dark mode landing page of MyERL microservice"
 		},
 		{
-			"src": "Responsive mobile view of our app!",
-			"sizes": "1280x720",
+			"src": "/screenshots/landing_dark_mobile.webp",
+			"sizes": "926x428",
+			"type": "image/webp",
+			"platform": "narrow",
+			"label": "The mobile dark mode landing page of MyERL microservice"
+		},
+		{
+			"src": "/screenshots/landing_light_pc.webp",
+			"sizes": "1366x768",
 			"type": "image/webp",
 			"platform": "wide",
-			"label": "You can bring and use MyERL with you anytime, anywhere!"
+			"label": "The PC light mode landing page of MyERL microservice"
 		},
 		{
-			"src": "MyERL microservice FAQs",
-			"sizes": "1280x720",
+			"src": "/screenshots/landing_light_ipad.webp",
+			"sizes": "1024x768",
 			"type": "image/webp",
 			"platform": "wide",
-			"label": "Some FAQs regarding the service of MyERL microservice"
+			"label": "The iPad light mode landing page of MyERL microservice"
 		},
 		{
-			"src": "Contact Us!",
-			"sizes": "1280x720",
-			"type": "image/webp",
-			"platform": "wide",
-			"label": "Send us a message! We're open and public about our service."
-		},
-		{
-			"src": "Landing page",
-			"sizes": "1280x720",
+			"src": "/screenshots/landing_light_mobile.webp",
+			"sizes": "926x428",
 			"type": "image/webp",
 			"platform": "narrow",
-			"label": "HomeScreen of MyERL: URL Encryption Microservice"
+			"label": "The mobile light mode landing page of MyERL microservice"
 		},
 		{
-			"src": "Why Choose MyERL?",
-			"sizes": "1280x720",
+			"src": "/screenshots/mobile_menu_dark.webp",
+			"sizes": "926x428",
 			"type": "image/webp",
 			"platform": "narrow",
-			"label": "List of numerous reasons why you should use MyERL"
+			"label": "The mobile dark mode menu bar of MyERL microservice"
 		},
 		{
-			"src": "Responsive mobile view of our app!",
-			"sizes": "1280x720",
+			"src": "/screenshots/mobile_menu_light.webp",
+			"sizes": "926x428",
 			"type": "image/webp",
 			"platform": "narrow",
-			"label": "You can bring and use MyERL with you anytime, anywhere!"
-		},
-		{
-			"src": "MyERL microservice FAQs",
-			"sizes": "1280x720",
-			"type": "image/webp",
-			"platform": "narrow",
-			"label": "Some FAQs regarding the service of MyERL microservice"
-		},
-		{
-			"src": "Contact Us!",
-			"sizes": "1280x720",
-			"type": "image/webp",
-			"platform": "narrow",
-			"label": "Send us a message! We're open and public about our service."
+			"label": "The mobile light mode menu bar of MyERL microservice"
 		}
 	]
 }

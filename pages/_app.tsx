@@ -21,6 +21,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name="owner" content="Alpha Romer Coma" />
 				<meta name="target" content="all" />
 				<meta name="copyright" content="Alpha Romer Coma" />
+				<title>MyERL | URL Encryption Microservice</title>
+				<meta
+					name="description"
+					content="MyERL microservice provides unlimited yet secure URL encrypting and shortening service."
+				/>
+				<meta name="url" content="https://myerl.vercel.app" />
 				<meta
 					name="keywords"
 					content="URL shortener, URL, ERL, encrypted, secure, free"
@@ -34,7 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name="topic" content="Encrypted URL Shortener" />
 				<meta
 					name="abstract"
-					content="MyERL microservice provides unlimited yet secure URL encrypting and shortening service."
+					content="MyERL microservice provides free and unlimited yet secure URL encrypting and shortening service."
 				/>
 
 				{/* Robot Meta Tags */}
@@ -48,8 +54,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 				{/* Open Graph Meta Tags */}
 				<meta
+					property="og:title"
+					content="MyERL | URL Encryption Microservice"
+				/>
+				<meta
+					property="og:description"
+					content="MyERL microservice provides free and unlimited yet secure URL encrypting and shortening service."
+				/>
+				<meta property="og:url" content="https://myerl.vercel.app" />
+				<meta
 					property="og:site_name"
-					content="MyERL | URL Encryption"
+					content="MyERL | URL Encryption Microservice"
 				/>
 				<meta property="og:type" content="website" />
 				{/* <meta
@@ -69,6 +84,18 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta property="og:locale:alternative" content="ja_JP" />
 
 				{/* Twitter Meta Tags */}
+				<meta
+					property="twitter:title"
+					content="MyERL | URL Encryption Microservice"
+				/>
+				<meta
+					property="twitter:description"
+					content="MyERL microservice provides free and unlimited yet secure URL encrypting and shortening service."
+				/>
+				<meta
+					property="twitter:url"
+					content="https://myerl.vercel.app"
+				/>
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:app:country" content="EN" />
 				{/* <meta
@@ -84,7 +111,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name="twitter:image:height" content="630" />
 				<meta name="twitter:site" content="@senodesuzo" />
 				<meta name="twitter:creator" content="@senodesuzo" />
-
+				<link rel="canonical" href="https://myerl.vercel.app" />
 				{/* Icons and browser stuff */}
 				<meta
 					httpEquiv="Content-Security-Policy"
