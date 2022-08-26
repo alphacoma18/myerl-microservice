@@ -7,16 +7,30 @@ const Nav: React.FC = () => {
 	return (
 		<nav className={styles.outermostNav}>
 			<div className={styles.myerlLogo}>
-				<a href="." className={styles.myerlAnchor}>
-					<Image src={"/logo/index.png"} width={120} height={60} />
+				<a
+					href="."
+					className={styles.myerlAnchor}
+					aria-label="Reload Page"
+				>
+					<Image
+						src={"/logo/index.png"}
+						width={120}
+						height={60}
+						alt="MyERL Light Logo"
+					/>
 				</a>
 			</div>
 			<div className={styles.myerlLogoDark}>
-				<a href="." className={styles.myerlAnchor}>
+				<a
+					href="."
+					className={styles.myerlAnchor}
+					aria-label="Reload Page"
+				>
 					<Image
 						src={"/logo/index_dark_2.png"}
 						width={120}
 						height={60}
+						alt="MyERL Dark Logo"
 					/>
 				</a>
 			</div>
@@ -25,6 +39,7 @@ const Nav: React.FC = () => {
 					src={"/logo/logo.png"}
 					width={60}
 					height={60}
+					alt="MyERL Mobile Logo"
 					onClick={() => setIsToggled((prev) => !prev)}
 				/>
 			</div>
@@ -38,6 +53,7 @@ const Nav: React.FC = () => {
 				<a
 					className={styles.closeMenu}
 					onClick={() => setIsToggled((prev) => !prev)}
+					aria-label="Close Menu Bar"
 				>
 					&times;
 				</a>
@@ -45,6 +61,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to password"
 					>
 						<i className="icon-expeditedssl"></i>
 						<span className={styles.linkSpan}>Password</span>
@@ -54,6 +71,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to Home"
 					>
 						<i className="icon-home"></i>
 						<span className={styles.linkSpan}>Home</span>
@@ -63,6 +81,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to About"
 					>
 						<i className="icon-bank"></i>
 						<span className={styles.linkSpan}>About</span>
@@ -72,6 +91,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to FAQs"
 					>
 						<i className="icon-info-circled"></i>
 						<span className={styles.linkSpan}>FAQs</span>
@@ -81,6 +101,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to Terms and Conditions"
 					>
 						<i className="icon-doc-text-inv"></i>
 						<span className={styles.linkSpan}>T&Cs</span>
@@ -90,6 +111,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to API"
 					>
 						<i className="icon-code"></i>
 						<span className={styles.linkSpan}>API</span>
@@ -99,6 +121,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						aria-label="Navigate to Contact"
 					>
 						<i className="icon-mail-alt"></i>
 						<span className={styles.linkSpan}>Contact</span>

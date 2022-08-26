@@ -5,7 +5,11 @@ const Credits: React.FC = () => {
 		<>
 			<h4 className={styles.credits}>
 				MIT License Copyright (c) 2022{" "}
-				<a href="https://www.linkedin.com/in/alpha-coma/">
+				<a
+					href="https://www.linkedin.com/in/alpha-coma/"
+					aria-label="Redirect to MyERL developer LinkedIn profile"
+					target={"_blank"}
+				>
 					Alpha&nbsp;Romer&nbsp;N.&nbsp;Coma
 				</a>
 			</h4>

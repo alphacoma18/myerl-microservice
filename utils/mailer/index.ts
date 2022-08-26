@@ -38,7 +38,8 @@ export default async function MyERLMailer(
         <br />
         <p>${message}</p>
         <br />
-        <a style="display: block; text-align: center;" href="https://myerl.vercel.app">Visit The Site</a>
+        <a style="display: block; text-align: center;" href="https://myerl.vercel.app" aria-label="Navigate to MyERL Production Site"
+>Visit The Site</a>
         <p>An automatic email from MyERL microservice</p>
     </div>
     
