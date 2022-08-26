@@ -56,19 +56,46 @@
 	"categories": ["microservice", "utilities", "encryption", "url shortener"],
 	"shortcuts": [
 		{
-			"name": "About",
+			"name": "MyERL About",
+			"short_name": "About",
 			"url": "/#link-about",
-			"description": "Get to know about our service!"
+			"description": "Get to know about our service!",
+			"icons": [
+				"/android-chrome-36x36.png",
+				"/android-chrome-48x48.png",
+				"/android-chrome-72x72.png",
+				"/android-chrome-96x96.png",
+				"/android-chrome-144x144.png",
+				"/android-chrome-192x192.png"
+			]
 		},
 		{
-			"name": "Terms and Conditions",
+			"name": "MyERL Terms and Conditions",
+			"short_name": "T&Cs",
 			"url": "/#link-terms",
-			"description": "Read about our terms and conditions!"
+			"description": "Read about our terms and conditions!",
+			"icons": [
+				"/android-chrome-36x36.png",
+				"/android-chrome-48x48.png",
+				"/android-chrome-72x72.png",
+				"/android-chrome-96x96.png",
+				"/android-chrome-144x144.png",
+				"/android-chrome-192x192.png"
+			]
 		},
 		{
-			"name": "Contact Us",
-			"url": "/#link-home",
-			"description": "We are open for questions!"
+			"name": "MyERL Contact Us",
+			"short_name": "Contact Us",
+			"url": "/#link-contact",
+			"description": "We are open for questions!",
+			"icons": [
+				"/android-chrome-36x36.png",
+				"/android-chrome-48x48.png",
+				"/android-chrome-72x72.png",
+				"/android-chrome-96x96.png",
+				"/android-chrome-144x144.png",
+				"/android-chrome-192x192.png"
+			]
 		}
 	],
 	"screenshots": [
