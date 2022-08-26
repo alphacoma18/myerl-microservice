@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
+				{/* Semantic Version: 1.0.5 */}
 				<meta charSet="utf-8" />
 				<meta
 					name="viewport"
