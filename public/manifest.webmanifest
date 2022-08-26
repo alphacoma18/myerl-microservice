@@ -1,5 +1,5 @@
 {
-	"name": "MyERL",
+	"name": "MyERL Microservice",
 	"short_name": "MyERL",
 	"icons": [
 		{
@@ -41,13 +41,18 @@
 			"src": "/android-chrome-384x384.png",
 			"sizes": "384x384",
 			"type": "image/png"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
 		}
 	],
 	"theme_color": "#ffffff",
 	"background_color": "#ffffff",
 	"start_url": "https://myerl.vercel.app",
 	"display": "standalone",
-	"description": "Shorten and encrypt your URLs using MyERL Microservice",
+	"description": "Shorten and encrypt your URLs using MyERL Microservice. The URL shortener that has your privacy's back.",
 	"categories": ["microservice", "utilities", "encryption", "url shortener"],
 	"shortcuts": [
 		{
