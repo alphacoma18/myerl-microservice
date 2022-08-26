@@ -8,6 +8,7 @@ const Credits: React.FC = () => {
 				<a
 					href="https://www.linkedin.com/in/alpha-coma/"
 					aria-label="Redirect to MyERL developer LinkedIn profile"
+					rel="noopener noreferrer"
 					target={"_blank"}
 				>
 					Alpha&nbsp;Romer&nbsp;N.&nbsp;Coma
