@@ -51,6 +51,7 @@ const Nav: React.FC = () => {
 				}
 			>
 				<a
+					href="javascript:void(0);"
 					className={styles.closeMenu}
 					onClick={() => setIsToggled((prev) => !prev)}
 					aria-label="Close Menu Bar"
