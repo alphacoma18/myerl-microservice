@@ -33,9 +33,9 @@ const Contact: React.FC = () => {
 		<>
 			{showSpinner && <Spinner />}
 			<div className={styles.flexContact}>
-				<h1 className={styles.headerContact} id="link-contact">
+				<h2 className={styles.headerContact} id="link-contact">
 					Contact Us
-				</h1>
+				</h2>
 				<div className={styles.itemContact}>
 					<form
 						action="post"

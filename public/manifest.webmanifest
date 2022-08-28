@@ -1,5 +1,5 @@
 {
-	"name": "MyERL",
+	"name": "MyERL Microservice",
 	"short_name": "MyERL",
 	"icons": [
 		{
@@ -41,29 +41,61 @@
 			"src": "/android-chrome-384x384.png",
 			"sizes": "384x384",
 			"type": "image/png"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
 		}
 	],
 	"theme_color": "#ffffff",
 	"background_color": "#ffffff",
 	"start_url": "https://myerl.vercel.app",
 	"display": "standalone",
-	"description": "Shorten and encrypt your URLs using MyERL Microservice",
+	"description": "Shorten and encrypt your URLs using MyERL Microservice. The URL shortener that has your privacy's back.",
 	"categories": ["microservice", "utilities", "encryption", "url shortener"],
 	"shortcuts": [
 		{
-			"name": "About",
+			"name": "MyERL About",
+			"short_name": "About",
 			"url": "/#link-about",
-			"description": "Get to know about our service!"
+			"description": "Get to know about our service!",
+			"icons": [
+				{ "src": "/android-chrome-36x36.png", "sizes": "36x36" },
+				{ "src": "/android-chrome-48x48.png", "sizes": "48x48" },
+				{ "src": "/android-chrome-72x72.png", "sizes": "72x72" },
+				{ "src": "/android-chrome-96x96.png", "sizes": "96x96" },
+				{ "src": "/android-chrome-144x144.png", "sizes": "144x144" },
+				{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }
+			]
 		},
 		{
-			"name": "Terms and Conditions",
+			"name": "MyERL Terms and Conditions",
+			"short_name": "T&Cs",
 			"url": "/#link-terms",
-			"description": "Read about our terms and conditions!"
+			"description": "Read about our terms and conditions!",
+			"icons": [
+				{ "src": "/android-chrome-36x36.png", "sizes": "36x36" },
+				{ "src": "/android-chrome-48x48.png", "sizes": "48x48" },
+				{ "src": "/android-chrome-72x72.png", "sizes": "72x72" },
+				{ "src": "/android-chrome-96x96.png", "sizes": "96x96" },
+				{ "src": "/android-chrome-144x144.png", "sizes": "144x144" },
+				{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }
+			]
 		},
 		{
-			"name": "Contact Us",
-			"url": "/#link-home",
-			"description": "We are open for questions!"
+			"name": "MyERL Contact Us",
+			"short_name": "Contact Us",
+			"url": "/#link-contact",
+			"description": "We are open for questions!",
+			"icons": [
+				{ "src": "/android-chrome-36x36.png", "sizes": "36x36" },
+				{ "src": "/android-chrome-48x48.png", "sizes": "48x48" },
+				{ "src": "/android-chrome-72x72.png", "sizes": "72x72" },
+				{ "src": "/android-chrome-96x96.png", "sizes": "96x96" },
+				{ "src": "/android-chrome-144x144.png", "sizes": "144x144" },
+				{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }
+			]
 		}
 	],
 	"screenshots": [

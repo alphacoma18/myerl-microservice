@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![MyERL Microservice Logo](https://myerl.vercel.app/logo/index_dark_2.png)
 
-## Getting Started
+## "The URL Shortener that has your privacy's back"
 
-First, run the development server:
+# MyERL | URL Encrypting Microservice
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Built using the most modern and scalable technologies, MyERL Microservice provides fast and quality URL encryption and shortening service and introduces the concept of ERLs (Encrypted Resource Locator).
 
-Open [https://myerl.vercel.app](https://myerl.vercel.app) with your browser to see the result.
+It offers a minimal yet responsive and elegant UI for the simple yet critical task of securely encrypting and shortening your URL.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Clients can anonymously encrypt and shorten their URLs as many as they please and of no charge what so ever under the absolute abidance of the [terms and conditions of the service](https://myerl.vercel.app/#link-terms).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [https://myerl.vercel.app/api/hello](https://myerl.vercel.app/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Tech-Stack
 
-## Learn More
+MyERL Microservice is built with the following technologies
 
-To learn more about Next.js, take a look at the following resources:
+1. Next.js w/ TypeScript - Front end
+2. MongoDB w/ Mongoose - Database with ORM
+3. CSS Modules - Styling
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MyERL is also a Progressive Web Application and can therefore be downloaded on mobile and desktop to provide a more intuitive and native experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Updates
+Latest update was on August 27, 2022. The service will be frequently checked for bugs that may arise and soon be updated to provide password-protected ERLs and other features.
+## Deployment
+The production application is currently hosted on Vercel with the URL [https://myerl.vercel.app](https://myerl.vercel.app). The database is generously hosted on MongoDB under the free tier.
+## Repository
 
-## Deploy on Vercel
+This is the production repository. Click [here](https://github.com/alphacoma18/myerl-microservice-dev.git) for the developer repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MyERL Microservice is under the MIT license and therefore freely distributable for those who so desires under the certain terms and conditions of the license.
+
+## Contributors
+MyERL Microservice is open to the community for any modifications and improvements and would be grateful for any collaborations.
+1. [Alpha Romer Coma](https://github.com/alphacoma18/)
+
+![MyERL Microservice Logo](https://myerl.vercel.app/logo/logo.png)

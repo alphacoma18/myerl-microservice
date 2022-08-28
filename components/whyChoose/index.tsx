@@ -81,7 +81,10 @@ const WhyChoose: React.FC = () => {
 						<li>
 							Don&apos;t trust us yet? Get a full glimpse at the
 							codes that power the site&nbsp;
-							<a href="https://github.com/alphacoma18/myerl-microservice.git">
+							<a
+								href="https://github.com/alphacoma18/myerl-microservice.git"
+								aria-label="Navigate to MyERL public GitHub Repository"
+							>
 								publicly available at GitHub
 							</a>
 							.

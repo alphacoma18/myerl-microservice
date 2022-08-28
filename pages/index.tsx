@@ -15,7 +15,9 @@ const App: NextPage = () => {
 			<div className={styles.widthReducer}>
 				<div className={styles.mainHeader}>
 					<h1 id="link-home">
-						<a href=".">MyERL: Encrypted URL Microservice</a>
+						<a href="." aria-label="Reload Page">
+							MyERL: Encrypted URL Microservice
+						</a>
 					</h1>
 					<q>
 						The URL shortener that has your

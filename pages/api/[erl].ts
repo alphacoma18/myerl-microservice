@@ -14,7 +14,7 @@ export default async function ErlHandler(
 		});
 		if (!encrypted_url) throw "Error: ERL Invalid";
 		const original_url = decrypt(encrypted_url);
-		res.status(200).redirect(original_url);
+		res.status(301).redirect(original_url);
 	} catch (err: any) {
 		res.json({ err });
 	}

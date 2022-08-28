@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
+				{/* Semantic Version: 1.0.5 */}
 				<meta charSet="utf-8" />
 				<meta
 					name="viewport"
@@ -24,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<title>MyERL | URL Encryption Microservice</title>
 				<meta
 					name="description"
-					content="MyERL microservice provides unlimited yet secure URL encrypting and shortening service."
+					content="Shorten and encrypt your URLs using MyERL Microservice. The URL shortener that has your privacy's back."
 				/>
 				<meta name="url" content="https://myerl.vercel.app" />
 				<meta
@@ -40,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name="topic" content="Encrypted URL Shortener" />
 				<meta
 					name="abstract"
-					content="MyERL microservice provides free and unlimited yet secure URL encrypting and shortening service."
+					content="Shorten and encrypt your URLs using MyERL Microservice. The URL shortener that has your privacy's back."
 				/>
 
 				{/* Robot Meta Tags */}
@@ -59,7 +60,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta
 					property="og:description"
-					content="MyERL microservice provides free and unlimited yet secure URL encrypting and shortening service."
+					content="Shorten and encrypt your URLs using MyERL Microservice. The URL shortener that has your privacy's back."
 				/>
 				<meta property="og:url" content="https://myerl.vercel.app" />
 				<meta
@@ -90,7 +91,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta
 					property="twitter:description"
-					content="MyERL microservice provides free and unlimited yet secure URL encrypting and shortening service."
+					content="Shorten and encrypt your URLs using MyERL Microservice. The URL shortener that has your privacy's back."
 				/>
 				<meta
 					property="twitter:url"
@@ -126,13 +127,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 					content="#1a2632"
 				/>
 
-				<meta name="application-name" content="MyERL" />
+				<meta name="application-name" content="MyERL Microservice" />
 				<meta name="msapplication-TileColor" content="#1a2632" />
 				<meta name="msapplication-navbutton-color" content="#1a2632" />
 				<meta
 					name="msapplication-TileImage"
 					content="/mstile-144x144.png"
 				/>
+				<meta name="msapplication-tap-highlight" content="no" />
 				<meta name="theme-color" content="#ffffff" />
 				<meta name="format-detection" content="telephone=no" />
 
@@ -169,6 +171,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					href="/safari-pinned-tab.svg"
 					color="#1a2632"
 				/>
+				<link rel="shortcut icon" href="/favicon.ico" />
 			</Head>
 			<Component {...pageProps} />
 		</>
