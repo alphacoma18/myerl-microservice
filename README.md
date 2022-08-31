@@ -23,9 +23,13 @@ MyERL Microservice is built with the following technologies
 MyERL is also a Progressive Web Application and can therefore be downloaded on mobile and desktop to provide a more intuitive and native experience.
 
 ## Updates
-Latest update was on August 27, 2022. The service will be frequently checked for bugs that may arise and soon be updated to provide password-protected ERLs and other features.
+
+Latest update was on August 31, 2022. The service will be frequently checked for bugs that may arise.
+
 ## Deployment
-The production application is currently hosted on Vercel with the URL [https://myerl.vercel.app](https://myerl.vercel.app). The database is generously hosted on MongoDB under the free tier.
+
+The production application is currently hosted on Vercel with the URL [https://myerl.vercel.app](https://myerl.vercel.app). The database is generously hosted on MongoDB under their free tier.
+
 ## Repository
 
 This is the production repository. Click [here](https://github.com/alphacoma18/myerl-microservice-dev.git) for the developer repository.
@@ -35,7 +39,9 @@ This is the production repository. Click [here](https://github.com/alphacoma18/m
 MyERL Microservice is under the MIT license and therefore freely distributable for those who so desires under the certain terms and conditions of the license.
 
 ## Contributors
+
 MyERL Microservice is open to the community for any modifications and improvements and would be grateful for any collaborations.
+
 1. [Alpha Romer Coma](https://github.com/alphacoma18/)
 
 ![MyERL Microservice Logo](https://myerl.vercel.app/logo/logo.png)

@@ -42,7 +42,7 @@
 .closeMenu {
 	display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	.navLink {
 		font-size: 24px;
 		padding: 0.6rem;
@@ -62,15 +62,11 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		background: none;
+		border: none;
 
-		padding: 16px;
-		color: var(--color-whitesmoke);
+		padding: 1rem;
 		font-weight: bold;
-
-		-o-transition: var(--fast-transition);
-		-moz-transition: var(--fast-transition);
-		-webkit-transition: var(--fast-transition);
-		transition: var(--fast-transition);
 	}
 	.outermostNav {
 		padding: 0.2rem;
@@ -97,11 +93,6 @@
 		background: var(--bg-darkgreen);
 		overflow-x: hidden;
 		flex-direction: column;
-
-		-o-transition: var(--fast-transition);
-		-moz-transition: var(--fast-transition);
-		-webkit-transition: var(--fast-transition);
-		transition: var(--fast-transition);
 	}
 	.navLinkHolder {
 		width: 0px;

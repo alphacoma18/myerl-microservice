@@ -11,7 +11,7 @@
 	text-align: center;
 }
 .itemContact {
-	width: clamp(0px, 75%, 750px);
+	width: clamp(0px, 100%, 750px);
 	padding: 0.4rem;
 	text-align: start;
 }
@@ -20,11 +20,15 @@
 	gap: 0.4rem;
 	flex-wrap: wrap;
 }
-.itemFormInput {
+.itemFormInput,
+.itemFormTextarea {
 	display: block;
 	padding: 1rem;
 	width: 100%;
 	margin: auto;
+}
+.itemFormTextarea {
+	min-height: 200px;
 }
 .headerEmail {
 	text-align: center;
@@ -36,10 +40,8 @@
 	gap: 0.4rem;
 }
 .itemFormButtons {
-	cursor: pointer;
 	width: 100%;
 	padding: 0.4rem;
-	font-size: 16px;
 }
 @media screen and (max-width: 768px) {
 	.itemContact {

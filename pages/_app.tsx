@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import "../public/fontello-77b449b8/css/fontello.css";
+import { ContextProvider } from "../utils/context/index";
+import "../public/fontello-72161ad4/css/fontello.css";
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				{/* Semantic Version: 1.0.5 */}
 				<meta charSet="utf-8" />
 				<meta
 					name="viewport"
@@ -173,7 +173,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<link rel="shortcut icon" href="/favicon.ico" />
 			</Head>
-			<Component {...pageProps} />
+			<ContextProvider>
+				<Component {...pageProps} />
+			</ContextProvider>
 		</>
 	);
 }

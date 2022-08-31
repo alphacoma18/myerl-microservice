@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-direction: column;
 	gap: 0.4rem;
 	width: 100%;
 }
@@ -11,7 +11,33 @@
 	text-align: center;
 }
 .itemApi {
-	width: 85%;
-	padding: 0.4rem;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 	text-align: start;
+	margin: auto;
+}
+.itemApiCode {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+.codeTextarea {
+	box-sizing: border-box;
+	resize: none;
+	min-height: 250px;
+	padding: 1rem;
+	width: clamp(0px, 100%, 750px);
+	margin: auto;
+	font-family: "Courier New", Courier, monospace;
+}
+.waysCode {
+	text-align: center;
+}
+@media screen and (max-width: 480px) {
+	.codeTextarea {
+		padding: 0.4rem;
+		font-size: 12px;
+	}
 }
