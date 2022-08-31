@@ -21,7 +21,10 @@ const TermsAndConditions = () => {
 					</p>
 					<br />
 					<details>
-						<summary className={styles.summary}>
+						<summary
+							className={styles.summary}
+							title={"Appropriate Service Use"}
+						>
 							Appropriate Service Use
 						</summary>
 						<ul>
@@ -52,7 +55,9 @@ const TermsAndConditions = () => {
 						<br />
 					</details>
 					<details>
-						<summary className={styles.summary}>Disclaimer</summary>
+						<summary className={styles.summary} title="Disclaimer">
+							Disclaimer
+						</summary>
 						<p>
 							{" "}
 							To the fullest extent permitted by applicable law,
@@ -95,7 +100,10 @@ const TermsAndConditions = () => {
 						<br />
 					</details>
 					<details>
-						<summary className={styles.summary}>
+						<summary
+							className={styles.summary}
+							title="Content Liability"
+						>
 							Content Liability
 						</summary>
 						<p>
@@ -120,7 +128,9 @@ const TermsAndConditions = () => {
 						<br />
 					</details>
 					<details>
-						<summary className={styles.summary}>Liability</summary>
+						<summary className={styles.summary} title="Liability">
+							Liability
+						</summary>
 						<p>
 							MyERL Microservice shall not be liable for any loss
 							or damage of any nature incurred by You as a result
@@ -140,7 +150,7 @@ const TermsAndConditions = () => {
 							with this agreement or otherwise, whether or not
 							such loss was discussed by the parties prior to
 							contract, or for any account for profit, costs, or
-							expenses arising from such d{" "}
+							expenses arising from such.
 						</p>
 						<br />
 					</details>

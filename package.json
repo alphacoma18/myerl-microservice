@@ -1,5 +1,5 @@
 {
-	"name": "url_shortener3",
+	"name": "myerl_microservice",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -10,22 +10,46 @@
 	},
 	"dependencies": {
 		"axios": "^0.27.2",
+		"bcrypt": "^5.0.1",
 		"cryptr": "^6.0.3",
 		"mongoose": "^6.5.2",
 		"next": "12.2.5",
 		"next-pwa": "^5.6.0",
 		"nodemailer": "^6.7.8",
 		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"react-dom": "18.2.0",
+		"sharp": "^0.30.7"
 	},
 	"devDependencies": {
+		"@types/bcrypt": "^5.0.0",
 		"@types/cryptr": "^4.0.1",
 		"@types/node": "18.7.9",
 		"@types/nodemailer": "^6.4.5",
 		"@types/react": "18.0.17",
 		"@types/react-dom": "18.0.6",
+		"@types/sharp": "^0.30.5",
 		"eslint": "8.22.0",
 		"eslint-config-next": "12.2.5",
 		"typescript": "4.7.4"
-	}
+	},
+	"description": "![MyERL Microservice Logo](https://myerl.vercel.app/logo/index_dark_2.png)",
+	"main": "next.config.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alphacoma18/myerl-microservice-dev.git"
+	},
+	"keywords": [
+		"URL shortener",
+		"shortener",
+		"URL",
+		"ERL",
+		"encrypted",
+		"secure"
+	],
+	"author": "Alpha Romer Coma",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/alphacoma18/myerl-microservice-dev/issues"
+	},
+	"homepage": "https://github.com/alphacoma18/myerl-microservice-dev#readme"
 }

@@ -38,15 +38,15 @@ export default async function MyERLMailer(
         <br />
         <p>${message}</p>
         <br />
-        <a style="display: block; text-align: center;" href="https://myerl.vercel.app" aria-label="Navigate to MyERL Production Site"
+        <a style="display: block; text-align: center;" href="https://myerl.vercel.app" title="Navigate to MyERL production site" aria-label="Navigate to MyERL production site"
 >Visit The Site</a>
         <p>An automatic email from MyERL microservice</p>
     </div>
     
     `;
 		await NodeMailer(subject, html);
+		return;
 	} catch (err) {
-		console.log(err);
 		return;
 	}
 }

@@ -1,9 +1,10 @@
 import mongoose, { ConnectOptions } from "mongoose";
 import { Schema, model, connect } from "mongoose";
 
-interface IERL {
+export interface IERL {
 	encrypted_url: string;
 	generated_url: string;
+	password?: string;
 	post_date: Date;
 }
 const ERLSchema = new Schema<IERL>({
@@ -14,6 +15,10 @@ const ERLSchema = new Schema<IERL>({
 	generated_url: {
 		type: String,
 		required: true,
+	},
+	password: {
+		type: String,
+		required: false,
 	},
 	post_date: {
 		type: Date,
@@ -27,7 +32,7 @@ async function run() {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	} as ConnectOptions);
-	console.log("Connected to Distribution API Database - Initial Connection");
+	// console.log("Connected to Distribution API Database - Initial Connection");
 }
 run();
 

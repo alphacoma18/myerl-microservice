@@ -11,7 +11,6 @@ const Contact: React.FC = () => {
 		try {
 			e.preventDefault();
 			setShowSpinner(true);
-			console.log(senderName, senderEmail, senderMessage);
 			await axios.post("/mail", {
 				senderName,
 				senderEmail,
@@ -19,7 +18,7 @@ const Contact: React.FC = () => {
 			});
 			handleClear();
 			setShowSpinner(false);
-		} catch (err: any) {
+		} catch (err) {
 			handleClear();
 			setShowSpinner(false);
 		}
@@ -41,6 +40,8 @@ const Contact: React.FC = () => {
 						action="post"
 						className={styles.flexFormInput}
 						onSubmit={handleSubmit}
+						title="Contact us form"
+						aria-label="Contact us form"
 					>
 						<h3 className={styles.headerEmail}>
 							Have a message for us?
@@ -52,6 +53,7 @@ const Contact: React.FC = () => {
 							type="text"
 							required
 							minLength={4}
+							maxLength={100}
 							placeholder=">>> Your Name"
 							autoComplete="off"
 							autoCorrect="off"
@@ -59,13 +61,15 @@ const Contact: React.FC = () => {
 								e: React.ChangeEvent<HTMLInputElement>
 							) => setSenderName(e.currentTarget.value)}
 							value={senderName}
-							title="Enter Your Name"
+							title="Enter your name"
+							aria-label="Enter your name"
 						/>
 						<input
 							className={styles.itemFormInput}
 							type="email"
 							required
 							minLength={10}
+							maxLength={30}
 							placeholder=">>> Your Google Email"
 							autoComplete="off"
 							pattern="([a-zA-Z0-9]+)([.{1}])?([a-zA-Z0-9]+)@(?:gmail|GMAIL)([.])(?:com|COM)"
@@ -73,18 +77,21 @@ const Contact: React.FC = () => {
 								e: React.ChangeEvent<HTMLInputElement>
 							) => setSenderEmail(e.currentTarget.value)}
 							value={senderEmail}
-							title="Enter Your Google Email"
+							title="Enter your Google Email"
+							aria-label="Enter your Google Email"
 						/>
 						<textarea
-							className={styles.itemFormInput}
+							className={styles.itemFormTextarea}
 							required
 							minLength={25}
+							maxLength={2028}
 							placeholder=">>> Your Message"
 							onChange={(
 								e: React.ChangeEvent<HTMLTextAreaElement>
 							) => setSenderMessage(e.currentTarget.value)}
 							value={senderMessage}
-							title="Enter Your Message"
+							title="Enter your message"
+							aria-label="Enter your message"
 						></textarea>
 						<div className={styles.flexFormButtons}>
 							<button
@@ -92,6 +99,7 @@ const Contact: React.FC = () => {
 								type="reset"
 								onClick={handleClear}
 								title="Clear all fields"
+								aria-label="Clear all fields"
 							>
 								Reset
 							</button>
@@ -99,6 +107,7 @@ const Contact: React.FC = () => {
 								className={styles.itemFormButtons}
 								type="submit"
 								title="Submit Form"
+								aria-label="Submit Form"
 							>
 								Submit
 							</button>

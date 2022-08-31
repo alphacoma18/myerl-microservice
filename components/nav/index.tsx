@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image";
+import GlobalContext from "../../utils/context";
 const Nav: React.FC = () => {
+	const { isRedirect, handleIsRedirect } = useContext(GlobalContext);
 	const [isToggled, setIsToggled] = useState<boolean>(false);
 	return (
 		<nav className={styles.outermostNav}>
@@ -10,13 +12,16 @@ const Nav: React.FC = () => {
 				<a
 					href="."
 					className={styles.myerlAnchor}
-					aria-label="Reload Page"
+					title="Reload page"
+					aria-label="Reload page"
 				>
 					<Image
 						src={"/logo/index.png"}
 						width={120}
 						height={60}
-						alt="MyERL Light Logo"
+						alt="MyERL light logo"
+						title="MyERL light logo"
+						aria-label="MyERL light logo"
 					/>
 				</a>
 			</div>
@@ -24,6 +29,7 @@ const Nav: React.FC = () => {
 				<a
 					href="."
 					className={styles.myerlAnchor}
+					title="Reload Page"
 					aria-label="Reload Page"
 				>
 					<Image
@@ -31,6 +37,8 @@ const Nav: React.FC = () => {
 						width={120}
 						height={60}
 						alt="MyERL Dark Logo"
+						title="MyERL dark logo"
+						aria-label="MyERL dark logo"
 					/>
 				</a>
 			</div>
@@ -40,6 +48,8 @@ const Nav: React.FC = () => {
 					width={60}
 					height={60}
 					alt="MyERL Mobile Logo"
+					title="MyERL Mobile Logo"
+					aria-label="MyERL mobile logo"
 					onClick={() => setIsToggled((prev) => !prev)}
 				/>
 			</div>
@@ -50,29 +60,36 @@ const Nav: React.FC = () => {
 						: styles.navLinkHolder
 				}
 			>
-				<a
-					href="javascript:void(0);"
+				<button
 					className={styles.closeMenu}
 					onClick={() => setIsToggled((prev) => !prev)}
-					aria-label="Close Menu Bar"
+					title="Close menu bar"
+					aria-label="Close menu bar"
 				>
 					&times;
-				</a>
+				</button>
 				<Link href="/">
 					<a
 						className={styles.navLink}
-						onClick={() => setIsToggled((prev) => !prev)}
+						onClick={() => {
+							setIsToggled((prev) => !prev);
+							handleIsRedirect();
+						}}
+						title="Navigate to password"
 						aria-label="Navigate to password"
 					>
-						<i className="icon-expeditedssl"></i>
-						<span className={styles.linkSpan}>Password</span>
+						<i className="icon-link-ext-alt"></i>
+						<span className={styles.linkSpan}>
+							{isRedirect ? "Redirects" : "Generate"}
+						</span>
 					</a>
 				</Link>
 				<Link href="/#link-home">
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
-						aria-label="Navigate to Home"
+						title="Navigate to home"
+						aria-label="Navigate to home"
 					>
 						<i className="icon-home"></i>
 						<span className={styles.linkSpan}>Home</span>
@@ -82,7 +99,8 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
-						aria-label="Navigate to About"
+						title="Navigate to about"
+						aria-label="Navigate to about"
 					>
 						<i className="icon-bank"></i>
 						<span className={styles.linkSpan}>About</span>
@@ -92,6 +110,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						title="Navigate to FAQs"
 						aria-label="Navigate to FAQs"
 					>
 						<i className="icon-info-circled"></i>
@@ -102,7 +121,8 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
-						aria-label="Navigate to Terms and Conditions"
+						title="Navigate to terms and conditions"
+						aria-label="Navigate to terms and conditions"
 					>
 						<i className="icon-doc-text-inv"></i>
 						<span className={styles.linkSpan}>T&Cs</span>
@@ -112,6 +132,7 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
+						title="Navigate to API"
 						aria-label="Navigate to API"
 					>
 						<i className="icon-code"></i>
@@ -122,7 +143,8 @@ const Nav: React.FC = () => {
 					<a
 						className={styles.navLink}
 						onClick={() => setIsToggled((prev) => !prev)}
-						aria-label="Navigate to Contact"
+						title="Navigate to contact"
+						aria-label="Navigate to contact"
 					>
 						<i className="icon-mail-alt"></i>
 						<span className={styles.linkSpan}>Contact</span>

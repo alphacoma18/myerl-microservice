@@ -41,8 +41,9 @@ const WhyChoose: React.FC = () => {
 					<h3>Fast and Simple</h3>
 					<ul>
 						<li>
-							MyERL offers a fast and simple UI for a simple yet
-							secure service. To encrypt and shorten your URL.
+							MyERL offers a minimal yet responsive and elegant UI
+							for the simple yet critical task of securely
+							encrypting and shortening your URL.
 						</li>
 					</ul>
 				</div>
@@ -80,9 +81,10 @@ const WhyChoose: React.FC = () => {
 					<ul>
 						<li>
 							Don&apos;t trust us yet? Get a full glimpse at the
-							codes that power the site&nbsp;
+							codes that power the service&nbsp;
 							<a
 								href="https://github.com/alphacoma18/myerl-microservice.git"
+								title="Navigate to MyERL public GitHub Repository"
 								aria-label="Navigate to MyERL public GitHub Repository"
 							>
 								publicly available at GitHub

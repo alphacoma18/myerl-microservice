@@ -8,7 +8,9 @@ const Faqs: React.FC<Props> = ({ header, description }) => {
 	return (
 		<>
 			<details className={styles.itemFaqs}>
-				<summary className={styles.summary}>{header}</summary>
+				<summary className={styles.summary} title={header}>
+					{header}
+				</summary>
 				{description}
 			</details>
 		</>

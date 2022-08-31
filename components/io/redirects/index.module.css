@@ -1,16 +1,4 @@
-.errorHide {
-	display: none;
-}
-.errorShow {
-	width: clamp(0px, 100%, 750px);
-	display: block;
-	background: var(--error-red);
-	border-radius: 50px;
-	padding: 0.4rem;
-	margin: 0.4rem auto;
-	text-align: center;
-}
-.flexIOForm {
+.flexRedirectForm {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.4rem;
@@ -18,8 +6,7 @@
 	justify-content: center;
 	margin: auto;
 }
-.inputDiv,
-.outputDiv {
+.inputForm {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -34,9 +21,8 @@
 	width: 100%;
 	padding: 0.4rem;
 }
-.generateURLInput,
-.generateURLOutput,
-.generateURLPassword {
+.receiveURLInput,
+.receiveURLPassword {
 	width: 100%;
 	padding-left: 58px;
 	padding-right: 58px;
@@ -44,15 +30,14 @@
 	margin: auto;
 }
 @media screen and (max-width: 480px) {
-	.generateURLInput,
-	.generateURLOutput,
-	.generateURLPassword {
-		padding-left: 29px;
-		padding-right: 29px;
-		height: 35px;
-	}
 	.itemFormButtons {
 		padding: 0.2rem;
 		font-size: 12px;
+	}
+	.receiveURLInput,
+	.receiveURLPassword {
+		padding-left: 29px;
+		padding-right: 29px;
+		height: 35px;
 	}
 }

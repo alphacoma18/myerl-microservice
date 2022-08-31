@@ -15,7 +15,11 @@ const App: NextPage = () => {
 			<div className={styles.widthReducer}>
 				<div className={styles.mainHeader}>
 					<h1 id="link-home">
-						<a href="." aria-label="Reload Page">
+						<a
+							href="."
+							title="Reload Page"
+							aria-label="Reload Page"
+						>
 							MyERL: Encrypted URL Microservice
 						</a>
 					</h1>
@@ -25,7 +29,6 @@ const App: NextPage = () => {
 					</q>
 				</div>
 				<IO />
-				<br />
 				<hr className="horizontalRule" />
 				<WhyChoose />
 				<hr className="horizontalRule" />
