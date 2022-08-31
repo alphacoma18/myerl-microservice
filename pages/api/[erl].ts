@@ -20,6 +20,7 @@ export default async function ErlHandler(
 		if (req.method === "GET") {
 			const data = await getData(user_eri);
 			if (data === null) throw "Error: ERL Invalid";
+			if (data?.password) return res.redirect("https://myerl.vercel.app");
 			const original_url = decrypt(data.encrypted_url);
 			return res.status(301).redirect(original_url);
 		}
