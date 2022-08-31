@@ -31,7 +31,25 @@ const FaqsAll: React.FC = () => {
 				/>
 				<Faqs
 					header={"Q: Is the service really free?"}
-					description={"A: Yes, yes it is."}
+					description={
+						"A: Yes. It's because MyERL microservice and its database is generously provided by trusted and regarded companies such as Vercel and MongoDB"
+					}
+				/>
+				<Faqs
+					header={
+						"Q: As a developer, can I use the service for my applications?"
+					}
+					description={
+						"A: Yes. On top of that, MyERL also provides various methods for developers to easily generate ERLs. (Refer to the API section below)"
+					}
+				/>
+				<Faqs
+					header={
+						"Q: Why am I being redirected to this site when I try to access the ERL?"
+					}
+					description={
+						"A: The ERL is protected by a password that was set by the original client. You can verify and access it on this site by clicking &apos;redirects&apos; then &apos;Password-Protect&apos;."
+					}
 				/>
 				<Faqs
 					header={"Q: What limitations are there?"}
@@ -46,10 +64,8 @@ const FaqsAll: React.FC = () => {
 					}
 				/>
 				<Faqs
-					header={"Q: Where are the Terms and Conditions?"}
-					description={
-						"A: You can find them below or just click here."
-					}
+					header={"Q: What are the Terms and Conditions?"}
+					description={"A: You can find them below."}
 				/>
 				<Faqs
 					header={"Q: What permissions do I have on my ERLs?"}
@@ -60,7 +76,15 @@ const FaqsAll: React.FC = () => {
 				<Faqs
 					header={"Q: Do the generated ERL's expire?"}
 					description={
-						"A: Technically it will not for as long as the web is still around or this site or the database doesn't get nuked."
+						"A: It does not but is possible to be unaccessible in the unlikely event that the database goes down. Read more at the Terms and Conditions, Disclaimer section"
+					}
+				/>
+				<Faqs
+					header={
+						"Q: Can I fork, modify, and distribute the open source codes of the microservice at GitHub?"
+					}
+					description={
+						"A: This microservice is under the copyright license of MIT and so you are free to do so while abiding by the license&apos;s terms."
 					}
 				/>
 			</div>

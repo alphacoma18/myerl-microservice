@@ -14,7 +14,7 @@ const WhyChoose: React.FC = () => {
 						<li>
 							Unlike other URL shorteners, ERL heavily encrypts
 							your URL and makes it so that only the application
-							can process and redirect to the original URL
+							can process and redirect to the original URL.
 						</li>
 					</ul>
 				</div>
@@ -38,22 +38,22 @@ const WhyChoose: React.FC = () => {
 					</ul>
 				</div>
 				<div className={styles.itemWhyChoose}>
-					<h3>Fast and Simple</h3>
-					<ul>
-						<li>
-							MyERL offers a minimal yet responsive and elegant UI
-							for the simple yet critical task of securely
-							encrypting and shortening your URL.
-						</li>
-					</ul>
-				</div>
-				<div className={styles.itemWhyChoose}>
 					<h3>Free and Unlimited</h3>
 					<ul>
 						<li>
 							Using MongoDB&apos;s generous service, we can safely
-							store humongous quantities of ERL&apos;s while
-							providing the service for free.
+							store <i>humongous</i> quantities of ERL&apos;s
+							while providing the service for free.
+						</li>
+					</ul>
+				</div>
+				<div className={styles.itemWhyChoose}>
+					<h3>Fast and Reliable</h3>
+					<ul>
+						<li>
+							MyERL does not lax on speed and reliability and
+							therefore is programmed to provide seamless service
+							to the very best of our capabilities.
 						</li>
 					</ul>
 				</div>
@@ -61,9 +61,30 @@ const WhyChoose: React.FC = () => {
 					<h3>Maintained and Up-to-Date</h3>
 					<ul>
 						<li>
-							For a site with a simplistic purpose, it is built
+							For a site with a simplistic purpose, MyERL is built
 							with modern technologies that enhances the quality
-							of service that we provide
+							of service that we provide.
+						</li>
+					</ul>
+				</div>
+				<div className={styles.itemWhyChoose}>
+					<h3>Modern and Simple</h3>
+					<ul>
+						<li>
+							MyERL offers a minimal yet responsive and elegant
+							interface for the simple yet critical task of
+							securely encrypting and shortening your URL.
+						</li>
+					</ul>
+				</div>
+				<div className={styles.itemWhyChoose}>
+					<h3>Available Everywhere</h3>
+					<ul>
+						<li>
+							MyERL microservice is a{" "}
+							<i>Progressive Web Application</i> and therefore
+							available for service on the Web, Android, IOS and
+							even Desktop.
 						</li>
 					</ul>
 				</div>
@@ -72,7 +93,8 @@ const WhyChoose: React.FC = () => {
 					<ul>
 						<li>
 							Through exposed APIs, MyERL is available for service
-							even without manually visiting the site.
+							even without manually visiting. Refer to the API
+							section.
 						</li>
 					</ul>
 				</div>
