@@ -10,6 +10,7 @@ interface Props {
 		redirectPassword: string;
 		setError: React.Dispatch<React.SetStateAction<string>>;
 		setShowError: React.Dispatch<React.SetStateAction<boolean>>;
+		setShowSpinner: React.Dispatch<React.SetStateAction<boolean>>;
 	};
 }
 
@@ -21,6 +22,7 @@ const Redirects = ({
 		redirectPassword,
 		setError,
 		setShowError,
+		setShowSpinner,
 	},
 }: Props) => {
 	const router = useRouter();
@@ -29,6 +31,7 @@ const Redirects = ({
 	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		try {
 			e.preventDefault();
+			setShowSpinner(true);
 			const regex = /^(https:\/\/myerl.vercel.app\/api\/)([a-z0-9]{8})$/;
 			const pass = regex.test(redirectInput);
 			if (!pass) throw "Error: Invalid URL";
@@ -37,8 +40,10 @@ const Redirects = ({
 				password: redirectPassword,
 			});
 			if (res.data.err) throw `${res.data.err}`;
+			setShowSpinner(false);
 			return router.push(res.data);
 		} catch (err: any) {
+			setShowSpinner(false);
 			setError(err);
 			setShowError(true);
 		}

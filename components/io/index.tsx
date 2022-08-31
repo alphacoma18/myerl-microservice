@@ -39,11 +39,11 @@ const IO: React.FC = () => {
 			if (!x) throw "Error: Server Error";
 			setErlOutput(x);
 			setShowSpinner(false);
-			outputRef.current?.focus();
+			return outputRef.current?.focus();
 		} catch (err: any) {
+			setShowSpinner(false);
 			setError(err);
 			setShowError(true);
-			setShowSpinner(false);
 			inputRef.current?.focus();
 		}
 	}
@@ -172,6 +172,7 @@ const IO: React.FC = () => {
 						redirectPassword,
 						setError,
 						setShowError,
+						setShowSpinner,
 					}}
 				/>
 			)}
